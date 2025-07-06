@@ -64,3 +64,44 @@ body {
     border-radius: 50%;
     animation: floatUp 15s linear infinite;
 }
+
+.floating-element:nth-child(1) {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.floating-element:nth-child(2) {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(45deg, #4ecdc4, #00b894);
+    left: 80%;
+    animation-delay: 5s;
+}
+
+.floating-element:nth-child(3) {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(45deg, #45b7d1, #0984e3);
+    left: 50%;
+    animation-delay: 10s;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(100vh) rotate(0deg);
+        opacity: 0;
+    }
+
+    10%,
+    90% {
+        opacity: 0.3;
+    }
+
+    100% {
+        transform: translateY(-100px) rotate(360deg);
+        opacity: 0;
+    }
+}
