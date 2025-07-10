@@ -189,3 +189,21 @@ document.addEventListener('DOMContentLoaded', function () {
     for (let i = 0; i < 3; i++) {
         setTimeout(() => createFloatingElement(), i * 1000);
     }
+
+    // ===== MOBILE TOUCH HANDLING =====
+    let touchStartX = 0;
+    let touchStartY = 0;
+    let touchStartTime = 0;
+
+    document.addEventListener('touchstart', function (e) {
+        touchStartX = e.touches[0].clientX;
+        touchStartY = e.touches[0].clientY;
+        touchStartTime = Date.now();
+    }, { passive: true });
+
+    document.addEventListener('touchmove', function (e) {
+        // Only prevent scrolling when menu is active
+        if (navMenu && navMenu.classList.contains('active')) {
+            e.preventDefault();
+        }
+    }, { passive: false });
