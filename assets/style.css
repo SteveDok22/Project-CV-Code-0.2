@@ -673,3 +673,81 @@ nav {
         transform: scale(1.1);
     }
 }
+
+.download-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.download-info-item {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.download-info-item:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255, 107, 107, 0.3);
+    background: rgba(255, 107, 107, 0.05);
+}
+
+.download-info-item .icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    display: block;
+    color: #ff6b6b;
+}
+
+.download-info-item h4 {
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.download-info-item p {
+    color: #b0b0b0;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.references-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.reference-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 2.5rem;
+    text-align: center;
+    backdrop-filter: blur(20px);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.reference-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(45deg, #ffeaa7, #fdcb6e);
+    border-radius: 20px 20px 0 0;
+}
+
+.reference-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    border-color: rgba(255, 234, 167, 0.3);
+}
