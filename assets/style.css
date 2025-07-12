@@ -751,3 +751,133 @@ nav {
     transform: translateY(-8px) scale(1.02);
     border-color: rgba(255, 234, 167, 0.3);
 }
+
+.reference-card h3 {
+    color: #ffeaa7;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.reference-card p {
+    color: #d0d0d0;
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+}
+
+.cta-section {
+    background: linear-gradient(135deg, rgba(255, 107, 107, 0.1), rgba(78, 205, 196, 0.1));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    padding: 4rem 2rem;
+    text-align: center;
+    margin: 4rem 0;
+    backdrop-filter: blur(20px);
+}
+
+.cta-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.cta-section p {
+    font-size: 1.2rem;
+    color: #d0d0d0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+footer {
+    background: rgba(15, 15, 15, 0.9);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 3rem 2rem;
+    text-align: center;
+    backdrop-filter: blur(20px);
+}
+
+footer p {
+    color: #b0b0b0;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background: rgba(15, 15, 15, 0.95);
+        backdrop-filter: blur(20px);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: left 0.3s ease;
+        gap: 2rem;
+    }
+
+    .nav-links.active {
+        left: 0;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .profile-section {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .contact-info {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .references-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-timeline {
+        padding-left: 2rem;
+    }
+
+    .timeline-item:hover {
+        transform: translateX(5px);
+    }
+
+    .project-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .download-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .download-btn {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+    }
+
+    .download-info {
+        grid-template-columns: 1fr;
+    }
+}
