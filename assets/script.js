@@ -207,3 +207,24 @@ document.addEventListener('DOMContentLoaded', function () {
             e.preventDefault();
         }
     }, { passive: false });
+
+    // Add swipe gesture to close menu
+    document.addEventListener('touchend', function (e) {
+        if (navMenu && navMenu.classList.contains('active')) {
+            const touchEndX = e.changedTouches[0].clientX;
+            const touchEndY = e.changedTouches[0].clientY;
+            const touchEndTime = Date.now();
+
+            const deltaX = touchEndX - touchStartX;
+            const deltaY = touchEndY - touchStartY;
+            const deltaTime = touchEndTime - touchStartTime;
+
+            // Check for swipe left gesture (close menu)
+            if (deltaTime < 300 && Math.abs(deltaX) > 50 && Math.abs(deltaY) < 100 && deltaX < 0) {
+                navToggle.classList.remove('active');
+                navMenu.classList.remove('active');
+                body.style.overflow = 'auto';
+                console.log('Menu closed via swipe gesture');
+            }
+        }
+    }, { passive: true });
