@@ -228,3 +228,75 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
     }, { passive: true });
+
+    // ===== CARD HOVER EFFECTS =====
+    const cards = document.querySelectorAll('.card, .skill-box, .timeline-item, .project-card, .reference-card');
+
+    cards.forEach(card => {
+        card.addEventListener('mouseenter', function () {
+            this.style.transform = 'translateY(-10px)';
+        });
+
+        card.addEventListener('mouseleave', function () {
+            this.style.transform = '';
+        });
+    });
+
+    // ===== DOWNLOAD BUTTON ANALYTICS =====
+    const downloadBtns = document.querySelectorAll('.download-btn');
+
+    downloadBtns.forEach(btn => {
+        btn.addEventListener('click', function (e) {
+            const btnType = this.classList.contains('secondary') ? 'email' : 'pdf';
+            console.log(`Download button clicked: ${btnType}`);
+
+            // You can add analytics tracking here
+            // Example: gtag('event', 'download', { 'event_category': 'CV', 'event_label': btnType });
+        });
+    });
+
+    // ===== PERFORMANCE MONITORING =====
+    // Monitor page load performance
+    window.addEventListener('load', function () {
+        const loadTime = performance.now();
+        console.log(`Page fully loaded in ${loadTime.toFixed(2)}ms`);
+    });
+
+    // ===== DEBUG INFORMATION =====
+    console.log('Script initialization complete');
+    console.log('Viewport width:', window.innerWidth);
+    console.log('User agent:', navigator.userAgent);
+
+    // Test function for debugging
+    window.testHamburger = function () {
+        console.log('Testing hamburger menu...');
+        if (navToggle && navMenu) {
+            navToggle.click();
+            console.log('Hamburger clicked programmatically');
+        } else {
+            console.error('Navigation elements not found for test');
+        }
+    };
+
+    // Expose useful functions for debugging
+    window.portfolioDebug = {
+        toggleMenu: () => navToggle?.click(),
+        scrollToSection: (id) => {
+            const element = document.querySelector(id);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        },
+        createFloatingElement: createFloatingElement,
+        getActiveSection: () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (window.pageYOffset >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+            return current;
+        }
+    };
+});
