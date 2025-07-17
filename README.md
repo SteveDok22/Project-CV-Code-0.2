@@ -214,3 +214,131 @@ window.portfolioDebug.createFloatingElement()
 - **Freelance Work**: Portfolio demonstration capabilities
 
 ## 🔄 Updates and Maintenance
+
+### Content Updates
+- **Regular**: Update experience, projects, and skills
+- **Quarterly**: Review and refresh project descriptions
+- **Annually**: Update educational background and certifications
+
+### Technical Maintenance
+- **Dependencies**: Monitor for font and library updates
+- **Browser Support**: Test with new browser versions
+- **Performance**: Regular Lighthouse audits
+- **Security**: Keep hosting platform updated
+
+## 📞 Contact Information
+
+**Stiven Ntoktorov**  
+*Full-Stack Developer in Training*
+
+📍 **Address**: 8052 Zürich, Switzerland  
+📞 **Phone**: +41 76 525 9731  
+📧 **Email**: s.doktorov123@gmail.com  
+💼 **GitHub**: [SteveDok22](https://github.com/SteveDok22)
+
+🏛️ **Legal Status**: Swiss Permit B | EU Citizen (Greek Nationality)
+
+## 📋 Changelog
+
+### Version 1.0.0 (July 2025)
+- ✅ Initial portfolio release
+- ✅ Responsive design implementation
+- ✅ Mobile hamburger navigation
+- ✅ Download CV functionality
+- ✅ Professional content structure
+- ✅ Dark mode creative design
+- ✅ Animation system integration
+
+### Planned Features (Future Versions)
+- 🔄 Contact form integration
+- 🔄 Blog section addition
+- 🔄 Project gallery expansion
+- 🔄 Testimonials section
+- 🔄 Multi-language support
+- 🔄 Dark/Light mode toggle
+- 🔄 Advanced analytics integration
+
+## 🤝 Contributing
+
+While this is a personal portfolio, feedback and suggestions are welcome:
+
+1. **Issues**: Report bugs or suggest improvements
+2. **Pull Requests**: Submit code improvements
+3. **Feedback**: Share design or content suggestions
+
+## 📜 License
+
+This project is licensed for personal and educational use. Please contact for commercial usage rights.
+
+### Usage Guidelines
+- ✅ Personal portfolios and learning projects
+- ✅ Educational demonstrations and tutorials
+- ✅ Open source contributions and modifications
+- ❌ Commercial redistribution without permission
+- ❌ Direct copying for client projects
+
+## 🙏 Acknowledgments
+
+### Inspiration and Resources
+- **Design Trends**: Modern SaaS interface patterns
+- **Color Palettes**: Contemporary gradient combinations
+- **Typography**: Google Fonts (Poppins, JetBrains Mono)
+- **Icons**: Custom SVG implementations
+- **Animations**: CSS3 and JavaScript best practices
+
+### Educational Framework
+- **Code Institute**: Full-Stack Development training
+- **Web Standards**: W3C guidelines and MDN documentation
+- **Accessibility**: WCAG 2.1 compliance principles
+
+## 🔗 Related Projects
+
+### Portfolio Variations
+This repository includes multiple color scheme variations:
+- **Original Creative**: Red/Teal/Blue/Green
+- **Ocean Blue**: Professional blue tones
+- **Emerald Forest**: Green sustainability theme
+- **Royal Purple**: Luxury and creativity focus
+- **Monochrome**: Black/White/Gray professional
+
+### Technical Implementations
+- **Responsive Design**: Mobile-first CSS Grid and Flexbox
+- **Animation Library**: Custom CSS keyframe animations
+- **Component System**: Modular CSS class structure
+- **Performance**: Optimized loading and rendering
+
+---
+
+## 📚 Additional Documentation
+
+### CSS Architecture
+The stylesheet follows a logical organization:
+1. **Reset and Base**: Universal styles and typography
+2. **Layout Components**: Navigation, hero, sections
+3. **Interactive Elements**: Buttons, cards, forms
+4. **Animations**: Keyframes and transitions
+5. **Responsive**: Media queries and mobile optimizations
+
+### JavaScript Modules
+The script is organized into functional sections:
+1. **Navigation**: Menu toggle and active states
+2. **Animations**: Floating elements and scroll effects
+3. **User Interaction**: Touch gestures and hover effects
+4. **Performance**: Debounced events and optimization
+5. **Debug Tools**: Development and testing utilities
+
+### File Dependencies
+```
+index.html
+├── style.css (required)
+├── script.js (required)
+├── assets/images/profile-photo.jpg (recommended)
+├── assets/cv/Stiven_Ntoktorov_CV.pdf (optional)
+└── Google Fonts (external, CDN)
+```
+
+---
+
+**Built with ❤️ by Stiven Ntoktorov | 2025**
+
+*This portfolio represents a journey from culinary excellence to software development, showcasing transferable skills, analytical thinking, and a passion for creating innovative digital experiences.*
