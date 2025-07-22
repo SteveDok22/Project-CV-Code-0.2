@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const navLinks = document.querySelectorAll('.nav-links a');
     const body = document.body;
 
-    onsole.log('Navigation elements found:', {
+    console.log('Navigation elements found:', {
         navToggle: !!navToggle,
         navMenu: !!navMenu,
         navLinks: navLinks.length
