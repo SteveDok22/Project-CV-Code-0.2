@@ -295,12 +295,16 @@ nav {
     text-align: center;
     transition: all 0.3s ease;
     backdrop-filter: blur(10px);
+    text-decoration: none;
+    color: inherit;
+    display: block;
 }
 
 .contact-item:hover {
     background: rgba(255, 255, 255, 0.1);
     transform: translateY(-5px);
     border-color: rgba(255, 107, 107, 0.5);
+    color: inherit;
 }
 
 .contact-item .icon {
