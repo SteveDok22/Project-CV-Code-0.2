@@ -5,6 +5,8 @@
 
 This is a modern, responsive portfolio website showcasing a creative dark mode design with dynamic animations and professional content. Built with vanilla HTML, CSS, and JavaScript, it demonstrates advanced front-end development skills and contemporary web design principles.
 
+**Live Website:** [See deployed website](https://stevedok22.github.io/Project-CV-Code-0.2/)
+
 ## ✨ Features
 
 ### 🎯 **Core Functionality**
