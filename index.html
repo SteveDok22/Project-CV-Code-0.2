@@ -1,324 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stiven Ntoktorov - Creative Developer</title>
-    <link rel="stylesheet" href="assets/style.css">
+    <meta name="description" content="Stiven Ntoktorov - Junior Full-Stack Developer with focus on FinTech applications">
+    <title>Stiven Ntoktorov | Junior Full-Stack Developer</title>
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%2300e5cc' rx='20' width='100' height='100'/><text x='50' y='68' font-size='50' text-anchor='middle' fill='%230a1014' font-weight='bold'>SN</text></svg>">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-
 <body>
-    div class="mesh-bg"></div>
-    <div class="floating-elements">
-        <div class="floating-element"></div>
-        <div class="floating-element"></div>
-        <div class="floating-element"></div>
-    </div>
-
-    <nav>
-        <div class="nav-container">
-            <div class="logo">&lt;/Stiven&gt;</div>
-            <ul class="nav-links">
-                <li><a href="#objective" class="active">Objective</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#download">Download CV</a></li>
-                <li><a href="#references">References</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+    <!-- ========== EPIC LOADING SCREEN ========== -->
+    <div class="loader" id="loader">
+        <div class="loader-bg"></div>
+        <div class="loader-grid"></div>
+        <div class="loader-particles">
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <div class="loader-content">
+            <div class="loader-logo">
+                <svg viewBox="0 0 100 100" class="loader-logo-svg">
+                    <defs>
+                        <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#00e5cc"/>
+                            <stop offset="100%" stop-color="#00b4d8"/>
+                        </linearGradient>
+                    </defs>
+                    <rect class="loader-logo-bg" x="10" y="10" width="80" height="80" rx="20" fill="url(#logoGrad)"/>
+                    <text class="loader-logo-text" x="50" y="65" text-anchor="middle" fill="#0a1014" font-size="36" font-weight="bold" font-family="system-ui">SN</text>
+                </svg>
+                <div class="loader-ring"></div>
+                <div class="loader-ring loader-ring-2"></div>
+                <div class="loader-ring loader-ring-3"></div>
+            </div>
+            <div class="loader-text">
+                <span class="loader-name">Stiven Ntoktorov</span>
+                <span class="loader-role">Junior Full-Stack Developer</span>
+            </div>
+            <div class="loader-progress">
+                <div class="loader-progress-bar"></div>
             </div>
         </div>
-    </nav>
-
-    <section class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">STIVEN NTOKTOROV</h1>
-            <h2 class="hero-subtitle">Full-Stack Developer | Aspiring MLOps Engineer in FinTech/Crypto</h2>
-            <p class="hero-description">
-                Full-stack software developer studying at Code Institute with real-world financial trading experience 
-                and a clear path toward MLOps engineering in FinTech/Crypto. 
-                Proficient in Python, JavaScript, HTML, and CSS, currently expanding into machine learning, 
-                cloud technologies, and data science tools. Combining hands-on market analysis expertise with 
-                systematic technical learning to build intelligent solutions for financial applications.
-            </p>
-
-            <div class="profile-section">
-                <img src="assets/images/profile-photo.jpg" alt="Stiven Ntoktorov" class="profile-pic">
-                <div class="contact-info">
-                    <a href="https://maps.google.com/?q=8052+Zürich,+Switzerland" target="_blank" class="contact-item">
-                        <span class="icon">📍</span>
-                        8052 Zürich, Switzerland
-                    </a>
-                    <a href="https://www.linkedin.com/in/steven-doktorov-304aa5296?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-                        target="_blank" class="contact-item">
-                        <span class="icon">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path
-                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                            </svg>
-                        </span>
-                        LinkedIn Profile
-                    </a>
-                    <a href="mailto:s.doktorov123@gmail.com" class="contact-item">
-                        <span class="icon">✉️</span>
-                        s.doktorov123@gmail.com
-                    </a>
-                    <a href="https://github.com/SteveDok22" target="_blank" class="contact-item">
-                        <span class="icon">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path
-                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                            </svg>
-                        </span>
-                        GitHub: SteveDok22
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="objective" class="section">
-        <h2 class="section-title">Professional Objective</h2>
-        <div class="card">
-            <p>Eager to bridge the gap between business and IT by leveraging analytical expertise, compliance monitoring
-                experience,
-                and full-stack development training. Seeking opportunities in financial technology where I can
-                contribute to
-                regulatory solutions, trading analytics, and enterprise architecture projects.</p>
-        </div>
-    </section>
-
-    <section id="skills" class="section">
-    <h2 class="section-title">Skills & Expertise</h2>
-    <div class="skills-container">
-        <div class="skill-box">
-            <h3><span class="icon">💻</span>Programming & Development</h3>
-            <div class="skill-content">
-                <strong>Proficient:</strong> Python (pandas, NumPy, OOP), JavaScript, HTML5, CSS3<br>
-                <strong>Tools:</strong> Git/GitHub, VS Code, Agile/Scrum methodologies<br>
-                <strong>Learning:</strong> SQL/PostgreSQL, Docker basics, Azure Fundamentals (AZ-900 prep)
-            </div>
-        </div>
-        
-        <div class="skill-box">
-            <h3><span class="icon">🤖</span>Machine Learning & Data Science</h3>
-            <div class="skill-content">
-                <strong>Currently Learning:</strong> scikit-learn (regression, classification), XGBoost, CatBoost<br>
-                <strong>Data Processing:</strong> pandas, NumPy, feature engineering for time series<br>
-                <strong>Next Steps:</strong> PyTorch/TensorFlow basics, MLflow/DVC, FastAPI for ML services
-            </div>
-        </div>
-        
-        <div class="skill-box">
-            <h3><span class="icon">📊</span>FinTech & Trading</h3>
-            <div class="skill-content">
-                <strong>Financial APIs:</strong> yfinance, Binance API, Alpaca (learning)<br>
-                <strong>Trading Platforms:</strong> TigerTrade, CScalp, ATAS, cTrader, ForexMarket<br>
-                <strong>Market Data:</strong> Bloomberg, Financial Times, Coinglass, fxclub.by<br>
-                <strong>Analysis:</strong> Technical analysis, volume profiling, liquidity-based strategies
-            </div>
-        </div>
-        
-        <div class="skill-box">
-            <h3><span class="icon">🧠</span>Professional Skills</h3>
-            <div class="skill-content">
-                Problem-solving, analytical thinking, data-driven decision making, cross-functional collaboration, 
-                adaptability, leadership in high-pressure environments, systematic learning approach.
-            </div>
-        </div>
-        
-        <div class="skill-box">
-            <h3><span class="icon">🌍</span>Languages</h3>
-            <div class="skill-content">
-                Russian (C2 Native), Greek (C2 Native), English (B2 Upper Intermediate), German (A2-B1 Intermediate).
-            </div>
+        <div class="loader-corners">
+            <span class="corner corner-tl"></span>
+            <span class="corner corner-tr"></span>
+            <span class="corner corner-bl"></span>
+            <span class="corner corner-br"></span>
         </div>
     </div>
-</section>
 
-    <section id="experience" class="section">
-        <h2 class="section-title">Professional Journey</h2>
-        <div class="experience-timeline">
-            <div class="timeline-item">
-                <h3>Hackathon Participant – JiVS Hackathon 2025</h3>
-                <p><strong>Feb 2025</strong></p>
-                <ul>
-                    <li>Challenge: Sanction & Compliance Monitoring (Infosys & Data Migration International).</li>
-                    <li>Designed a compliance monitoring solution for sanctions data integration.</li>
-                    <li>Focused on data structuring, regulatory adaptability, and risk assessment.</li>
-                </ul>
-            </div>
-
-            <div class="timeline-item">
-                <h3>Full-Stack Developer Trainee – Code Institute</h3>
-                <p><strong>June 2025 – Present</strong></p>
-                <ul>
-                    <li>Building portfolio projects including responsive websites and a Trading Analytics Dashboard.
-                    </li>
-                    <li>Learning full-stack frameworks, JavaScript, and Python applications.</li>
-                </ul>
-            </div>
-
-            <div class="timeline-item">
-                <h3>Independent Market Analyst & Trader</h3>
-                <p><strong>2013 – Present</strong></p>
-                <ul>
-                    <li>Self-taught expert in stock and cryptocurrency markets, with over a decade of experience
-                        analyzing trends and optimizing strategies.</li>
-                    <li>Applied liquidity and volume-based strategies in high-volatility environments.</li>
-                    <li>Conducted technical analysis, compliance monitoring, and risk management.</li>
-                    <li>Developed advanced problem-solving and data interpretation skills, highly transferable to
-                        software development roles.</li>
-                </ul>
-            </div>
-
-            <div class="timeline-item">
-                <h3>Culinary Professional – GateGroup, SWISS First Class Launch Restaurant</h3>
-                <p><strong>Jan 2024 – Present</strong></p>
-                <ul>
-                    <li>Serve as a key team member in a high-end airline catering environment, ensuring precision and
-                        efficiency under tight schedules.</li>
-                    <li>Apply leadership and process optimization skills to manage kitchen operations and train junior
-                        staff.</li>
-                </ul>
-            </div>
-
-            <div class="timeline-item">
-                <h3>Earlier Culinary Roles (Summary)</h3>
-                <p><strong>2014 – 2022</strong></p>
-                <ul>
-                    <li>Progressed through roles (Commis Chef to Station Chef) at prestigious venues, including Michelin
-                        Guide restaurants (e.g., Beluga, Varoulko).</li>
-                    <li>Cultivated transferable skills in team leadership, process optimization, and creative
-                        problem-solving under pressure.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section id="education" class="section">
-        <h2 class="section-title">Educational Background</h2>
-
-        <div class="card">
-            <h3>Code Institute – Full Stack Software Development</h3>
-            <p><strong>Ongoing </strong></p>
-            <ul>
-                <li>Focused on Python (pandas, NumPy, OOP), JavaScript (ES6+, data visualization), responsive web development, and Agile project management</li>
-                <li>Portfolio includes Personal Finance Survey Analyzer (Python + Google Sheets + Heroku), FinTrack Dashboard (JavaScript + Chart.js), and financial calculation tools</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <h3>Cardiff Metropolitan University, UK – Bachelor's in Food & Beverage</h3>
-            <p><strong>Oct 2013 – Nov 2016</strong></p>
-            <ul>
-                <li>Earned a Diploma of Higher Education alongside a Bachelor's degree, gaining insights into research
-                    methods, financial planning, and management—skills applicable to tech project development.</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <h3>Swiss Alpine Center, Greece – Diploma in Culinary Arts</h3>
-            <p><strong>Oct 2013 – Nov 2016</strong></p>
-            <ul>
-                <li>Completed practical and theoretical training in international cuisines and management, enhancing
-                    adaptability and attention to detail.</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <h3>1st Lyceum of Nea Moudania, Halkidiki, Greece</h3>
-            <p><strong>Sept 2001 – May 2013</strong></p>
-            <ul>
-                <li>Leaving School Certificate - Apolytirion</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="projects" class="section">
-        <h2 class="section-title">Current Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <h3>Portfolio Project 1 – Responsive Personal Site</h3>
-                <p>Crafted using HTML & CSS to highlight development skills (in progress).</p>
-            </div>
-
-            <div class="project-card">
-                <h3>Trading Analytics Dashboard</h3>
-                <p>Developing an interactive tool with JavaScript and Python to visualize market data (target
-                    completion: 2025).</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="download" class="section">
-        <div class="download-section">
-            <div class="download-content">
-                <h2>Download My CV</h2>
-                <p>
-                    Get a comprehensive overview of my professional background, skills, and experience in a beautifully
-                    formatted PDF document. Perfect for HR departments and hiring managers.
-                </p>
-
-                <div class="download-buttons">
-                    <a href="assets/cv/STIVEN-CV-FinTech-2026.pdf" target="_blank" class="download-btn" download>
-                        <span class="download-icon">📄</span>
-                        Download PDF CV
-                    </a>
-                    <a href="mailto:s.doktorov123@gmail.com?subject=CV%20Request&body=Hello%20Stiven,%0D%0A%0D%0AI%20would%20like%20to%20request%20your%20latest%20CV.%0D%0A%0D%0AThank%20you!"
-                        class="download-btn secondary">
-                        <span class="download-icon">✉️</span>
-                        Request via Email
-                    </a>
-                </div>
-        
-            </div>
-        </div>
-    </section>
-
-    <div class="cta-section">
-        <h2>Ready to Create Amazing Things</h2>
-        <p>Passionate about technology and ready to contribute fresh perspectives to innovative projects. Let's build
-            the future together.</p>
-    </div>
-
-    <section id="references" class="section">
-        <h2 class="section-title">Professional References</h2>
-        <div class="references-grid">
-            <div class="reference-card">
-                <h3>Mr. Robert Jentzsch</h3>
-                <p>Executive Chef at C.C., Hyatt Regency</p>
-                <p>The Circle, Zurich Airport, 8058, Flughafen, Schweiz</p>
-                <p><strong>Tel:</strong> +41 78 722 9914</p>
-            </div>
-            <div class="reference-card">
-                <h3>Mr. Demis Kokkinidis</h3>
-                <p>Executive Chef at Water Restaurant, Sani Asterias Suites</p>
-                <p>Kassandras, Halkidiki, 63077 Halkidiki, Greece</p>
-                <p><strong>Email:</strong> dkokkinidis@saniresort.gr</p>
-                <p><strong>Tel:</strong> +30 698 893 0917</p>
-            </div>
-            <div class="reference-card">
-                <h3>Ms. Mary Kung</h3>
-                <p>Sous Chef, GateGroup – SWISS First Class Launch Restaurant</p>
-                <p>Zürich Airport, Switzerland</p>
-                <p><strong>Email:</strong> mkueng@gategroup.com</p>
-                <p><strong>Tel:</strong> +41 79 640 50 61</p>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>© 2025 Stiven Ntoktorov. All rights reserved. | Married | Greek Nationality | Permit B</p>
-    </footer>
-
-    <script src="assets/script.js"></script>
-</body>
-
+ </body>
 </html>
