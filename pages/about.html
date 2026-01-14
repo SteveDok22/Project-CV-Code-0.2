@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Stiven Ntoktorov</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%2300d9ff' rx='20' width='100' height='100'/><text x='50' y='68' font-size='50' text-anchor='middle' fill='%230a0a0f' font-weight='bold'>SN</text></svg>">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <div class="nav-logo-icon">SN</div>
+                <span class="nav-logo-text">Stiven.dev</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link active">About</a></li>
+                <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="experience.html" class="nav-link">Experience</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <a href="contact.html" class="nav-cta">Let's Talk</a>
+            <div class="nav-toggle" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <main class="main">
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero-content">
+                    <div class="section-label"><span>Get To Know Me</span></div>
+                    <h1 class="heading-xl">About <span class="text-gradient">Me</span></h1>
+                    <p class="text-lg">From Michelin-starred kitchens to trading floors to software development</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section about-section">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image">
+                        <div class="about-image-wrapper">
+                            <img src="../assets/images/profile-photo.jpg" alt="Stiven Ntoktorov" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="about-image-placeholder" style="display:none;">SN</div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-content">
+                        <h2 class="heading-lg">Bridging Finance & Technology</h2>
+                        
+                        <p class="about-text">
+                            I'm a <strong>Full-Stack Developer</strong> and aspiring <strong>MLOps Engineer</strong> based in 
+                            <strong>Zürich, Switzerland</strong>, with a unique background that combines over a decade of 
+                            active trading experience with formal culinary training and now, software development.
+                        </p>
+                        
+                        <p class="about-text">
+                            My journey started in <strong>Michelin-starred kitchens</strong> across Greece and Switzerland, 
+                            where I developed discipline, attention to detail, and the ability to perform under pressure. 
+                            Parallel to my culinary career, I've been <strong>actively trading</strong> stocks and 
+                            cryptocurrencies since 2013, developing deep expertise in technical analysis, risk management, 
+                            and market psychology.
+                        </p>
+                        
+                        <p class="about-text">
+                            Now, I'm channeling these experiences into building <strong>intelligent FinTech solutions</strong>. 
+                            Currently enrolled in Code Institute's Full-Stack Software Development program with an 
+                            <strong>AI Cores specialization</strong>, I'm learning to combine machine learning with 
+                            full-stack development to create data-driven applications for financial markets.
+                        </p>
+                        
+                        <p class="about-text">
+                            What sets me apart? I don't just code trading applications — I've <strong>lived them</strong>. 
+                            I understand the user's needs because I am the user. This real-world perspective 
+                            drives me to build tools that actually solve problems traders face.
+                        </p>
+                        
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <div class="highlight-icon"><i data-lucide="trending-up"></i></div>
+                                <span class="highlight-text">10+ Years Trading Experience</span>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-icon"><i data-lucide="code-2"></i></div>
+                                <span class="highlight-text">Full-Stack Development</span>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-icon"><i data-lucide="brain"></i></div>
+                                <span class="highlight-text">AI/ML Specialization</span>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-icon"><i data-lucide="globe"></i></div>
+                                <span class="highlight-text">4 Languages Spoken</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Journey Timeline -->
+        <section class="section journey-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-label"><span>My Path</span></div>
+                    <h2 class="section-title heading-lg">The Journey So Far</h2>
+                </div>
+                
+                <div class="journey-steps">
+                    <div class="journey-step">
+                        <div class="journey-icon"><i data-lucide="chef-hat"></i></div>
+                        <div class="journey-content">
+                            <h3>Culinary Foundations</h3>
+                            <span class="journey-date">2013 - 2022</span>
+                            <p>Trained at Swiss Alpine Center, worked in Michelin Guide restaurants, developed discipline and precision under pressure.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="journey-step">
+                        <div class="journey-icon"><i data-lucide="candlestick-chart"></i></div>
+                        <div class="journey-content">
+                            <h3>Trading & Markets</h3>
+                            <span class="journey-date">2013 - Present</span>
+                            <p>Self-taught trader in stocks and crypto. Developed expertise in technical analysis, volume profiling, and risk management.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="journey-step">
+                        <div class="journey-icon"><i data-lucide="code"></i></div>
+                        <div class="journey-content">
+                            <h3>Software Development</h3>
+                            <span class="journey-date">2024 - Present</span>
+                            <p>Enrolled at Code Institute. Building FinTech applications combining trading knowledge with modern development practices.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="journey-step active">
+                        <div class="journey-icon"><i data-lucide="brain"></i></div>
+                        <div class="journey-content">
+                            <h3>AI & Machine Learning</h3>
+                            <span class="journey-date">Now</span>
+                            <p>AI Cores specialization focusing on ML algorithms, data pipelines, and intelligent systems for financial applications.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What Drives Me -->
+        <section class="section values-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-label"><span>Philosophy</span></div>
+                    <h2 class="section-title heading-lg">What Drives Me</h2>
+                </div>
+                
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-icon"><i data-lucide="target"></i></div>
+                        <h3>Precision</h3>
+                        <p>From plating dishes to writing code, every detail matters. I bring the same meticulous attention to development that earned me positions in world-class kitchens.</p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-icon"><i data-lucide="lightbulb"></i></div>
+                        <h3>Problem Solving</h3>
+                        <p>Trading taught me to analyze complex situations and make decisions under pressure. I apply the same analytical mindset to software challenges.</p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-icon"><i data-lucide="rocket"></i></div>
+                        <h3>Continuous Learning</h3>
+                        <p>Markets evolve, technology advances. I'm committed to staying ahead of the curve, constantly expanding my skills in both development and finance.</p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-icon"><i data-lucide="users"></i></div>
+                        <h3>User-Centric</h3>
+                        <p>As a trader who uses financial tools daily, I understand what users actually need. I build applications that solve real problems.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="section cta-section">
+            <div class="container">
+                <div class="cta-card">
+                    <div class="cta-content">
+                        <h2 class="heading-lg">Let's Work Together</h2>
+                        <p class="text-lg">Interested in my unique perspective on FinTech development? Let's connect!</p>
+                        <div class="cta-buttons">
+                            <a href="contact.html" class="btn btn-primary"><i data-lucide="mail"></i>Get In Touch</a>
+                            <a href="../assets/cv/STIVEN-CV-FinTech-2026.pdf" class="btn btn-secondary" download><i data-lucide="download"></i>Download CV</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="footer-logo-icon">SN</div>
+                    <div>
+                        <div class="footer-name">Stiven Ntoktorov</div>
+                        <div class="footer-text">Full-Stack Developer & MLOps Engineer</div>
+                    </div>
+                </div>
+                <div class="footer-socials">
+                    <a href="https://github.com/SteveDok22" target="_blank" class="social-link"><i data-lucide="github"></i></a>
+                    <a href="https://www.linkedin.com/in/steven-doktorov-304aa5296" target="_blank" class="social-link"><i data-lucide="linkedin"></i></a>
+                    <a href="/cdn-cgi/l/email-protection#88fba6ece7e3fce7fae7feb9babbc8efe5e9e1e4a6ebe7e5" class="social-link"><i data-lucide="mail"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom"><p class="footer-text">© 2025 Stiven Ntoktorov. All rights reserved.</p></div>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>lucide.createIcons();function toggleMenu(){document.getElementById('navMenu').classList.toggle('active');}</script>
+
+    <style>
+        .journey-section { background: var(--bg-secondary); }
+        .journey-steps { display: flex; flex-direction: column; gap: 0; max-width: 700px; margin: 0 auto; position: relative; }
+        .journey-steps::before { content: ''; position: absolute; left: 28px; top: 0; bottom: 0; width: 2px; background: var(--border-color); }
+        .journey-step { display: flex; gap: 24px; padding: 30px 0; position: relative; }
+        .journey-step.active .journey-icon { background: var(--gradient-secondary); animation: pulse 2s infinite; }
+        .journey-icon { width: 56px; height: 56px; background: var(--gradient-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; z-index: 2; border: 4px solid var(--bg-secondary); }
+        .journey-icon svg { width: 24px; height: 24px; color: var(--bg-primary); }
+        .journey-content h3 { font-family: var(--font-display); font-size: 1.3rem; margin-bottom: 6px; }
+        .journey-date { font-size: 0.9rem; color: var(--accent-primary); font-weight: 500; }
+        .journey-content p { color: var(--text-secondary); margin-top: 12px; line-height: 1.7; }
+        
+        .values-section { background: var(--bg-primary); }
+        .values-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+        .value-card { padding: 32px; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 20px; transition: var(--transition-medium); }
+        .value-card:hover { border-color: var(--accent-primary); transform: translateY(-5px); }
+        .value-icon { width: 56px; height: 56px; background: rgba(0, 217, 255, 0.1); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; }
+        .value-icon svg { width: 28px; height: 28px; color: var(--accent-primary); }
+        .value-card h3 { font-family: var(--font-display); font-size: 1.3rem; margin-bottom: 12px; }
+        .value-card p { color: var(--text-secondary); line-height: 1.7; }
+        
+        @media (max-width: 768px) {
+            .journey-steps::before { left: 28px; }
+     
