@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Stiven Ntoktorov</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%2300d9ff' rx='20' width='100' height='100'/><text x='50' y='68' font-size='50' text-anchor='middle' fill='%230a0a0f' font-weight='bold'>SN</text></svg>">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <div class="nav-logo-icon">SN</div>
+                <span class="nav-logo-text">Stiven.dev</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                <li><a href="experience.html" class="nav-link">Experience</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <a href="contact.html" class="nav-cta">Let's Talk</a>
+            <div class="nav-toggle" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <main class="main">
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero-content">
+                    <div class="section-label"><span>My Work</span></div>
+                    <h1 class="heading-xl">Featured <span class="text-gradient">Projects</span></h1>
+                    <p class="text-lg">Real-world applications showcasing my expertise in FinTech and full-stack development</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section projects-section">
+            <div class="container">
+                <div class="projects-filter">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+                    <button class="filter-btn" data-filter="python">Python</button>
+                    <button class="filter-btn" data-filter="frontend">Frontend</button>
+                    <button class="filter-btn" data-filter="trading">Trading</button>
+                </div>
+
+                <div class="projects-full-grid">
+                    <!-- TradeSim Pro -->
+                    <article class="project-card-full" data-category="fullstack">
+                        <div class="project-image">
+                            <div class="project-placeholder"><i data-lucide="trending-up"></i></div>
+                            <div class="project-overlay">
+                                <a href="https://tradesim-pro-stiven-62203fadbb77.herokuapp.com" target="_blank" class="project-link"><i data-lucide="external-link"></i></a>
+                                <a href="https://github.com/SteveDok22/TradeSim-Pro" target="_blank" class="project-link"><i data-lucide="github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">Django 5.0</span>
+                                <span class="tag">React 18</span>
+                                <span class="tag">PostgreSQL</span>
+                                <span class="tag">JWT</span>
+                            </div>
+                            <h3 class="project-title">TradeSim Pro</h3>
+                            <p class="project-description">Full-stack trading simulator with real-time cryptocurrency and forex prices. Features include portfolio tracking, trade execution, watchlists, and comprehensive P&L analytics. Built with Django REST Framework backend and React frontend.</p>
+                            <div class="project-links">
+                                <a href="https://tradesim-pro-stiven-62203fadbb77.herokuapp.com" target="_blank" class="project-btn primary"><i data-lucide="external-link"></i>Live Demo</a>
+                                <a href="https://github.com/SteveDok22/TradeSim-Pro" target="_blank" class="project-btn"><i data-lucide="github"></i>Source Code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PacifiqueTrade Indicator -->
+                    <article class="project-card-full" data-category="trading python">
+                        <div class="project-image">
+                            <div class="project-placeholder"><i data-lucide="line-chart"></i></div>
+                            <div class="project-overlay">
+                                <a href="https://github.com/SteveDok22/PacifiqueTrade-indicator2.0" target="_blank" class="project-link"><i data-lucide="github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">Pine Script v5</span>
+                                <span class="tag">Telegram API</span>
+                                <span class="tag">TradingView</span>
+                            </div>
+                            <h3 class="project-title">PacifiqueTrade Indicator 2.0</h3>
+                            <p class="project-description">Sophisticated Forex trading system combining fundamental news analysis, multi-timeframe technical analysis, and liquidity zone detection. Features automated Telegram notifications, FVG detection, and equal highs/lows identification.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/SteveDok22/PacifiqueTrade-indicator2.0" target="_blank" class="project-btn"><i data-lucide="github"></i>Source Code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Personal Finance Survey Analyzer -->
+                    <article class="project-card-full" data-category="python">
+                        <div class="project-image">
+                            <div class="project-placeholder"><i data-lucide="pie-chart"></i></div>
+                            <div class="project-overlay">
+                                <a href="https://github.com/SteveDok22/MoneyMind---Servey" target="_blank" class="project-link"><i data-lucide="github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">pandas</span>
+                                <span class="tag">Google Sheets API</span>
+                                <span class="tag">Heroku</span>
+                            </div>
+                            <h3 class="project-title">Personal Finance Survey Analyzer</h3>
+                            <p class="project-description">CLI application for analyzing personal finance survey data with cloud integration. Features data visualization with matplotlib/seaborn, Google Sheets integration for cloud storage, and comprehensive statistical analysis.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/SteveDok22/MoneyMind---Servey" target="_blank" class="project-btn"><i data-lucide="github"></i>Source Code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- FinTrack Dashboard -->
+                    <article class="project-card-full" data-category="frontend">
+                        <div class="project-image">
+                            <div class="project-placeholder"><i data-lucide="wallet"></i></div>
+                            <div class="project-overlay">
+                                <a href="https://stevedok22.github.io/personal-finance-dashboard/" target="_blank" class="project-link"><i data-lucide="external-link"></i></a>
+                                <a href="https://github.com/SteveDok22/personal-finance-dashboard" target="_blank" class="project-link"><i data-lucide="github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">JavaScript ES6+</span>
+                                <span class="tag">Chart.js</span>
+                                <span class="tag">LocalStorage</span>
+                                <span class="tag">CSS3</span>
+                            </div>
+                            <h3 class="project-title">FinTrack Dashboard</h3>
+                            <p class="project-description">Personal finance tracking dashboard with interactive data visualization. T-Bank inspired UI design with income/expense tracking, budget management, analytics page, and responsive design. Uses LocalStorage for data persistence.</p>
+                            <div class="project-links">
+                                <a href="https://stevedok22.github.io/personal-finance-dashboard/" target="_blank" class="project-btn primary"><i data-lucide="external-link"></i>Live Demo</a>
+                                <a href="https://github.com/SteveDok22/personal-finance-dashboard" target="_blank" class="project-btn"><i data-lucide="github"></i>Source Code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- HYPE Specialty Coffee -->
+                    <article class="project-card-full" data-category="frontend">
+                        <div class="project-image">
+                            <div class="project-placeholder"><i data-lucide="coffee"></i></div>
+                            <div class="project-overlay">
+                                <a href="https://stevedok22.github.io/HYPE-speciality-coffee/" target="_blank" class="project-link"><i data-lucide="external-link"></i></a>
+                                <a href="https://github.com/SteveDok22/HYPE-speciality-coffee" target="_blank" class="project-link"><i data-lucide="github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">SVG Animations</span>
+                                <span class="tag">Responsive</span>
+                            </div>
+                            <h3 class="project-title">HYPE Specialty Coffee</h3>
+                            <p class="project-description">Modern coffee shop website featuring custom SVG logo with floating steam animation, neon pulsing text effects, smooth hamburger menu transitions, and responsive design. Built with pure CSS animations.</p>
+                            <div class="project-links">
+                                <a href="https://stevedok22.github.io/HYPE-speciality-coffee/" target="_blank" class="project-btn primary"><i data-lucide="external-link"></i>Live Demo</a>
+                                <a href="https://github.com/SteveDok22/HYPE-speciality-coffee" target="_blank" class="project-btn"><i data-lucide="github"></i>Source Code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Loan Calculator -->
+                    <article class="project-card-full" data-category="python">
+                        <div class="project-image">
+                            <div class="project-placeholder"><i data-lucide="calculator"></i></div>
+                            <div class="project-overlay">
+                                <a href="https://github.com/SteveDok22/loan-calculator" target="_blank" class="project-link"><i data-lucide="github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">OOP</span>
+                                <span class="tag">Financial Calculations</span>
+                            </div>
+                            <h3 class="project-title">Loan Calculator</h3>
+                            <p class="project-description">Python application for loan calculations with payment schedule generation. Features early payment simulations, amortization tables, comprehensive data export, and modular OOP architecture.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/SteveDok22/loan-calculator" target="_blank" class="project-btn"><i data-lucide="github"></i>Source Code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Thunder QR Generator -->
+                    <article class="project-card-full" data-category="python">
+                        <div class="project-image">
+                            <div class="project-placeholder"><i data-lucide="qr-code"></i></div>
+                            <div class="project-overlay">
+                                <a href="https://github.com/SteveDok22/thunder-qr-generator" target="_blank" class="project-link"><i data-lucide="github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">qrcode</span>
+                                <span class="tag">CLI</span>
+                            </div>
+                            <h3 class="project-title">Thunder QR Generator</h3>
+                            <p class="project-description">Enhanced QR code generator with expanded functionality. Command-line tool for generating customized QR codes with various sizes and error correction levels.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/SteveDok22/thunder-qr-generator" target="_blank" class="project-btn"><i data-lucide="github"></i>Source Code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Hacktoberfest ResCanvas -->
+                    <article class="project-card-full" data-category="frontend">
+                        <div class="project-image">
+                            <div class="project-placeholder"><i data-lucide="palette"></i></div>
+                            <div class="project-overlay">
+                                <a href="https://github.com/ResilientApp/ResCanvas" target="_blank" class="project-link"><i data-lucide="github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Canvas API</span>
+                                <span class="tag">Open Source</span>
+                                <span class="tag">Hacktoberfest</span>
+                            </div>
+                            <h3 class="project-title">ResCanvas Contribution</h3>
+                            <p class="project-description">Open-source contribution to ResCanvas project during Hacktoberfest 2025. Implemented advanced brush system with custom effects, mixer filters, and rubber stamp tool functionality.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/ResilientApp/ResCanvas" target="_blank" class="project-btn"><i data-lucide="github"></i>View Project</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- GitHub Stats -->
+        <section class="section github-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-label"><span>GitHub Activity</span></div>
+                    <h2 class="section-title heading-lg">Open Source Contributions</h2>
+                </div>
+                
+                <div class="github-cta">
+                    <a href="https://github.com/SteveDok22" target="_blank" class="btn btn-primary">
+                        <i data-lucide="github"></i>
+                        View My GitHub Profile
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="footer-logo-icon">SN</div>
+                    <div>
+                        <div class="footer-name">Stiven Ntoktorov</div>
+                        <div class="footer-text">Full-Stack Developer & MLOps Engineer</div>
+                    </div>
+                </div>
+                <div class="footer-socials">
+                    <a href="https://github.com/SteveDok22" target="_blank" class="social-link"><i data-lucide="github"></i></a>
+                    <a href="https://www.linkedin.com/in/steven-doktorov-304aa5296" target="_blank" class="social-link"><i data-lucide="linkedin"></i></a>
+                    <a href="/cdn-cgi/l/email-protection#4a39642e25213e2538253c7b78790a2d272b232664292527" class="social-link"><i data-lucide="mail"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom"><p class="footer-text">© 2025 Stiven Ntoktorov. All rights reserved.</p></div>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        lucide.createIcons();
+        function toggleMenu() { document.getElementById('navMenu').classList.toggle('active'); }
+        
+        // Project Filter
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const projects = document.querySelectorAll('.project-card-full');
+        
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                const filter = btn.dataset.filter;
+                
+                projects.forEach(project => {
+                    if (filter === 'all' || project.dataset.category.includes(filter)) {
+                        project.style.display = 'block';
+                        project.style.animation = 'fadeInUp 0.5s ease forwards';
+                    } else {
+                        project.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+
+    <style>
+        .github-section {
+            background: 
