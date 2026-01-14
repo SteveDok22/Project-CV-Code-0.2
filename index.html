@@ -54,6 +54,340 @@
             <span class="corner corner-br"></span>
         </div>
     </div>
+    <!-- Network Background -->
+    <div class="bg-network"></div>
+    <div class="particles" id="particles"></div>
 
- </body>
+    <!-- Navigation -->
+    <nav class="nav page-transition">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <div class="nav-logo-icon">SN</div>
+                <span class="nav-logo-text">Stiven.dev</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="pages/about.html" class="nav-link">About</a></li>
+                <li><a href="pages/skills.html" class="nav-link">Skills</a></li>
+                <li><a href="pages/projects.html" class="nav-link">Projects</a></li>
+                <li><a href="pages/experience.html" class="nav-link">Experience</a></li>
+                <li><a href="pages/contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <a href="pages/contact.html" class="nav-cta"><i data-lucide="message-circle"></i>Let's Talk</a>
+            <div class="nav-toggle" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main page-transition">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-bg">
+                <div class="hero-glow"></div>
+                <div class="hero-glow-2"></div>
+            </div>
+            
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge reveal-item" data-delay="0">
+                        <span class="badge-dot"></span>
+                        <span>Open to opportunities</span>
+                    </div>
+                    
+                    <h1 class="hero-title reveal-item" data-delay="100">
+                        <span class="hero-greeting">Hello, I'm</span>
+                        <span class="hero-name">Stiven Ntoktorov</span>
+                    </h1>
+                    
+                    <div class="hero-roles reveal-item" data-delay="200">
+                        <span class="role-item">Junior Full-Stack Developer</span>
+                        <span class="role-divider"><i data-lucide="chevron-right"></i></span>
+                        <span class="role-item highlight">FinTech Focus</span>
+                    </div>
+                    
+                    <p class="hero-description reveal-item" data-delay="300">
+                        Aspiring developer with <strong>10+ years of real trading experience</strong>. 
+                        Currently studying Full-Stack Development at Code Institute with 
+                        <span class="text-gradient">AI/ML specialization</span>. 
+                        Building data-driven applications for financial markets.
+                    </p>
+                    
+                    <div class="hero-cta reveal-item" data-delay="400">
+                        <a href="pages/projects.html" class="btn btn-primary">
+                            <i data-lucide="folder-open"></i>View My Work
+                        </a>
+                        <a href="assets/cv/STIVEN-CV-2026.pdf" class="btn btn-secondary" download>
+                            <i data-lucide="download"></i>Download CV
+                        </a>
+                    </div>
+                    
+                    <div class="hero-socials reveal-item" data-delay="500">
+                        <a href="https://github.com/SteveDok22" target="_blank" class="social-link"><i data-lucide="github"></i></a>
+                        <a href="https://www.linkedin.com/in/steven-doktorov-304aa5296" target="_blank" class="social-link"><i data-lucide="linkedin"></i></a>
+                        <a href="mailto:s.doktorov123@gmail.com" class="social-link"><i data-lucide="mail"></i></a>
+                        <a href="https://maps.google.com/?q=Zürich,Switzerland" target="_blank" class="social-link"><i data-lucide="map-pin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual reveal-item" data-delay="200" data-direction="right">
+                    <div class="hero-image-wrapper">
+                        <div class="hero-image-glow"></div>
+                        <div class="hero-image-border"></div>
+                        <img src="assets/images/profile-formal.jpg" alt="Stiven Ntoktorov" class="hero-image" onerror="this.style.display='none'">
+                        <div class="hero-image-placeholder"><span>SN</span></div>
+                    </div>
+                    
+                    <div class="floating-badge badge-1 animate-float"><i class="devicon-python-plain colored"></i></div>
+                    <div class="floating-badge badge-2 animate-float" style="animation-delay:0.5s"><i class="devicon-react-original colored"></i></div>
+                    <div class="floating-badge badge-3 animate-float" style="animation-delay:1s"><i class="devicon-django-plain"></i></div>
+                    <div class="floating-badge badge-4 animate-float" style="animation-delay:1.5s"><i class="devicon-javascript-plain colored"></i></div>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+                <span>Scroll down</span>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="section stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item"><div class="stat-icon"><i data-lucide="trending-up"></i></div><div class="stat-number" data-count="10">0</div><div class="stat-label">Years Trading Experience</div></div>
+                    <div class="stat-item"><div class="stat-icon"><i data-lucide="folder-git-2"></i></div><div class="stat-number" data-count="8">0</div><div class="stat-label">Portfolio Projects</div></div>
+                    <div class="stat-item"><div class="stat-icon"><i data-lucide="layers"></i></div><div class="stat-number" data-count="20">0</div><div class="stat-label">Technologies Learning</div></div>
+                    <div class="stat-item"><div class="stat-icon"><i data-lucide="git-commit"></i></div><div class="stat-number" data-count="300">0</div><div class="stat-label">GitHub Commits</div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bachelor's Degree Focus -->
+        <section class="section focus-section">
+            <div class="container">
+                <div class="focus-card">
+                    <div class="focus-icon"><i data-lucide="graduation-cap"></i></div>
+                    <div class="focus-content">
+                        <span class="focus-label">Coming Soon</span>
+                        <h3>Bachelor's Degree Starting May/June 2026</h3>
+                        <p>Continuing education to deepen technical expertise and expand career opportunities.</p>
+                    </div>
+                    <div class="focus-badge"><i data-lucide="calendar"></i><span>2026</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack Preview -->
+        <section class="section tech-preview-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-label"><i data-lucide="code-2"></i><span>Tech Stack</span></div>
+                    <h2 class="section-title heading-lg">Technologies I'm Learning</h2>
+                    <p class="section-description">Building full-stack skills with focus on Python and JavaScript ecosystems</p>
+                </div>
+                
+                <div class="tech-showcase">
+                    <div class="tech-category">
+                        <h3 class="tech-category-title">Languages</h3>
+                        <div class="tech-row">
+                            <div class="tech-item"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+                            <div class="tech-item"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+                            <div class="tech-item"><i class="devicon-html5-plain colored"></i><span>HTML5</span></div>
+                            <div class="tech-item"><i class="devicon-css3-plain colored"></i><span>CSS3</span></div>
+                            <div class="tech-item"><i class="devicon-postgresql-plain colored"></i><span>SQL</span></div>
+                        </div>
+                    </div>
+                    <div class="tech-category">
+                        <h3 class="tech-category-title">Frameworks & Libraries</h3>
+                        <div class="tech-row">
+                            <div class="tech-item"><i class="devicon-django-plain"></i><span>Django</span></div>
+                            <div class="tech-item"><i class="devicon-react-original colored"></i><span>React</span></div>
+                            <div class="tech-item"><i class="devicon-pandas-plain"></i><span>Pandas</span></div>
+                            <div class="tech-item"><i class="devicon-numpy-plain"></i><span>NumPy</span></div>
+                            <div class="tech-item"><i class="devicon-tailwindcss-original colored"></i><span>Tailwind</span></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tech-cta"><a href="pages/skills.html" class="btn btn-secondary"><i data-lucide="layers"></i>View Full Tech Stack</a></div>
+            </div>
+        </section>
+
+        <!-- Featured Projects -->
+        <section class="section projects-preview-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-label"><i data-lucide="folder-open"></i><span>Portfolio</span></div>
+                    <h2 class="section-title heading-lg">Featured Projects</h2>
+                    <p class="section-description">Learning by building real-world FinTech applications</p>
+                </div>
+                
+                <div class="projects-grid">
+                    <article class="project-card featured">
+                        <div class="project-image">
+                            <div class="project-placeholder"><i data-lucide="trending-up"></i></div>
+                            <div class="project-overlay">
+                                <a href="https://tradesim-pro-stiven-62203fadbb77.herokuapp.com" target="_blank" class="project-link"><i data-lucide="external-link"></i></a>
+                                <a href="https://github.com/SteveDok22/TradeSim-Pro" target="_blank" class="project-link"><i data-lucide="github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags"><span class="tag">Django</span><span class="tag">React</span><span class="tag">PostgreSQL</span></div>
+                            <h3 class="project-title">TradeSim Pro</h3>
+                            <p class="project-description">Trading simulator with real-time prices, portfolio tracking, and P&L analytics.</p>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder"><i data-lucide="line-chart"></i></div>
+                            <div class="project-overlay">
+                                <a href="https://github.com/SteveDok22/PacifiqueTrade-indicator2.0" target="_blank" class="project-link"><i data-lucide="github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags"><span class="tag">Python</span><span class="tag">Pine Script</span><span class="tag">Telegram</span></div>
+                            <h3 class="project-title">PacifiqueTrade Indicator</h3>
+                            <p class="project-description">Forex trading system with liquidity zone detection and automated alerts.</p>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder"><i data-lucide="pie-chart"></i></div>
+                            <div class="project-overlay">
+                                <a href="https://github.com/SteveDok22/MoneyMind---Servey" target="_blank" class="project-link"><i data-lucide="github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags"><span class="tag">Python</span><span class="tag">Google Sheets</span><span class="tag">Heroku</span></div>
+                            <h3 class="project-title">Finance Survey Analyzer</h3>
+                            <p class="project-description">CLI tool for analyzing personal finance data with cloud integration.</p>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="projects-cta"><a href="pages/projects.html" class="btn btn-primary"><i data-lucide="folder-open"></i>View All Projects</a></div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section cta-section">
+            <div class="container">
+                <div class="cta-card">
+                    <div class="cta-glow"></div>
+                    <div class="cta-content">
+                        <h2 class="heading-lg">Looking for Tech Opportunities</h2>
+                        <p class="text-lg">Junior developer eager to learn and grow. Open to full-time, internship, or freelance positions.</p>
+                        <div class="cta-buttons">
+                            <a href="pages/contact.html" class="btn btn-primary"><i data-lucide="mail"></i>Get In Touch</a>
+                            <a href="https://www.linkedin.com/in/steven-doktorov-304aa5296" target="_blank" class="btn btn-secondary"><i data-lucide="linkedin"></i>Connect on LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer page-transition">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="footer-logo-icon">SN</div>
+                    <div><div class="footer-name">Stiven Ntoktorov</div><div class="footer-text">Junior Full-Stack Developer</div></div>
+                </div>
+                <div class="footer-socials">
+                    <a href="https://github.com/SteveDok22" target="_blank" class="social-link"><i data-lucide="github"></i></a>
+                    <a href="https://www.linkedin.com/in/steven-doktorov-304aa5296" target="_blank" class="social-link"><i data-lucide="linkedin"></i></a>
+                    <a href="mailto:s.doktorov123@gmail.com" class="social-link"><i data-lucide="mail"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom"><p class="footer-text">© 2025 Stiven Ntoktorov. All rights reserved. | Zürich, Switzerland</p></div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+        
+        // Mobile Menu Toggle
+        function toggleMenu() { document.getElementById('navMenu').classList.toggle('active'); }
+        
+        // ========== EPIC LOADING ANIMATION ==========
+        const loader = document.getElementById('loader');
+        const pageElements = document.querySelectorAll('.page-transition');
+        const revealItems = document.querySelectorAll('.reveal-item');
+        
+        // Hide page content initially
+        pageElements.forEach(el => el.style.opacity = '0');
+        
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                // Complete loading animation
+                loader.classList.add('loader-complete');
+                
+                setTimeout(() => {
+                    loader.classList.add('loader-hidden');
+                    
+                    // Reveal page sections
+                    pageElements.forEach((el, i) => {
+                        setTimeout(() => {
+                            el.style.opacity = '1';
+                            el.style.transform = 'translateY(0)';
+                            el.classList.add('revealed');
+                        }, i * 100);
+                    });
+                    
+                    // Reveal hero items with stagger
+                    setTimeout(() => {
+                        revealItems.forEach(item => {
+                            const delay = parseInt(item.dataset.delay) || 0;
+                            setTimeout(() => item.classList.add('revealed'), delay);
+                        });
+                    }, 200);
+                    
+                    // Remove loader
+                    setTimeout(() => loader.remove(), 800);
+                }, 500);
+            }, 2200);
+        });
+        
+        // Animate Stats on Scroll
+        let statsAnimated = false;
+        function animateStats() {
+            if (statsAnimated) return;
+            statsAnimated = true;
+            document.querySelectorAll('.stat-number').forEach(stat => {
+                const target = parseInt(stat.dataset.count);
+                let current = 0;
+                const step = target / 60;
+                const counter = setInterval(() => {
+                    current += step;
+                    if (current >= target) { stat.textContent = target + '+'; clearInterval(counter); }
+                    else { stat.textContent = Math.floor(current) + '+'; }
+                }, 30);
+            });
+        }
+        
+        // Intersection Observer
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    if (entry.target.classList.contains('stats-section')) animateStats();
+                    entry.target.classList.add('in-view');
+                }
+            });
+        }, { threshold: 0.2 });
+        
+        document.querySelectorAll('.section').forEach(section => observer.observe(section));
+        
+        // Parallax
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const glow = document.querySelector('.hero-glow');
+            if (glow) glow.style.transform = `translate(${scrolled * 0.08}px, ${scrolled * 0.04}px)`;
+        });
+    </script>
+</body>
 </html>
