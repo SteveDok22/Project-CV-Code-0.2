@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects | Stiven Ntoktorov</title>
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%2300d9ff' rx='20' width='100' height='100'/><text x='50' y='68' font-size='50' text-anchor='middle' fill='%230a0a0f' font-weight='bold'>SN</text></svg>">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%2300e5cc' rx='20' width='100' height='100'/><text x='50' y='68' font-size='50' text-anchor='middle' fill='%230a1014' font-weight='bold'>SN</text></svg>">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
+    <!-- Network Background -->
+    <div class="bg-network"></div>
+
     <nav class="nav">
         <div class="nav-container">
             <a href="../index.html" class="nav-logo">
@@ -25,7 +28,7 @@
                 <li><a href="experience.html" class="nav-link">Experience</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
-            <a href="contact.html" class="nav-cta">Let's Talk</a>
+            <a href="contact.html" class="nav-cta"><i data-lucide="message-circle"></i>Let's Talk</a>
             <div class="nav-toggle" onclick="toggleMenu()"><span></span><span></span><span></span></div>
         </div>
     </nav>
@@ -34,7 +37,7 @@
         <section class="page-hero">
             <div class="container">
                 <div class="page-hero-content">
-                    <div class="section-label"><span>My Work</span></div>
+                    <div class="section-label"><i data-lucide="folder-open"></i><span>My Work</span></div>
                     <h1 class="heading-xl">Featured <span class="text-gradient">Projects</span></h1>
                     <p class="text-lg">Real-world applications showcasing my expertise in FinTech and full-stack development</p>
                 </div>
@@ -55,6 +58,7 @@
                     <!-- TradeSim Pro -->
                     <article class="project-card-full" data-category="fullstack">
                         <div class="project-image">
+                            <img src="../assets/images/projects/tradesim-pro.jpg" alt="TradeSim Pro" class="project-screenshot" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                             <div class="project-placeholder"><i data-lucide="trending-up"></i></div>
                             <div class="project-overlay">
                                 <a href="https://tradesim-pro-stiven-62203fadbb77.herokuapp.com" target="_blank" class="project-link"><i data-lucide="external-link"></i></a>
@@ -69,7 +73,7 @@
                                 <span class="tag">JWT</span>
                             </div>
                             <h3 class="project-title">TradeSim Pro</h3>
-                            <p class="project-description">Full-stack trading simulator with real-time cryptocurrency and forex prices. Features include portfolio tracking, trade execution, watchlists, and comprehensive P&L analytics. Built with Django REST Framework backend and React frontend.</p>
+                            <p class="project-description">Full-stack trading simulator with real-time cryptocurrency and forex prices. Features include portfolio tracking, trade execution, watchlists, and comprehensive P&L analytics.</p>
                             <div class="project-links">
                                 <a href="https://tradesim-pro-stiven-62203fadbb77.herokuapp.com" target="_blank" class="project-btn primary"><i data-lucide="external-link"></i>Live Demo</a>
                                 <a href="https://github.com/SteveDok22/TradeSim-Pro" target="_blank" class="project-btn"><i data-lucide="github"></i>Source Code</a>
@@ -80,6 +84,7 @@
                     <!-- PacifiqueTrade Indicator -->
                     <article class="project-card-full" data-category="trading python">
                         <div class="project-image">
+                            <img src="../assets/images/projects/pacifique-trade.jpg" alt="PacifiqueTrade Indicator" class="project-screenshot" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                             <div class="project-placeholder"><i data-lucide="line-chart"></i></div>
                             <div class="project-overlay">
                                 <a href="https://github.com/SteveDok22/PacifiqueTrade-indicator2.0" target="_blank" class="project-link"><i data-lucide="github"></i></a>
@@ -93,7 +98,7 @@
                                 <span class="tag">TradingView</span>
                             </div>
                             <h3 class="project-title">PacifiqueTrade Indicator 2.0</h3>
-                            <p class="project-description">Sophisticated Forex trading system combining fundamental news analysis, multi-timeframe technical analysis, and liquidity zone detection. Features automated Telegram notifications, FVG detection, and equal highs/lows identification.</p>
+                            <p class="project-description">Sophisticated Forex trading system combining fundamental news analysis, multi-timeframe technical analysis, and liquidity zone detection. Features automated Telegram notifications.</p>
                             <div class="project-links">
                                 <a href="https://github.com/SteveDok22/PacifiqueTrade-indicator2.0" target="_blank" class="project-btn"><i data-lucide="github"></i>Source Code</a>
                             </div>
@@ -103,6 +108,7 @@
                     <!-- Personal Finance Survey Analyzer -->
                     <article class="project-card-full" data-category="python">
                         <div class="project-image">
+                            <img src="../assets/images/projects/finance-survey.jpg" alt="Finance Survey Analyzer" class="project-screenshot" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                             <div class="project-placeholder"><i data-lucide="pie-chart"></i></div>
                             <div class="project-overlay">
                                 <a href="https://github.com/SteveDok22/MoneyMind---Servey" target="_blank" class="project-link"><i data-lucide="github"></i></a>
@@ -116,7 +122,7 @@
                                 <span class="tag">Heroku</span>
                             </div>
                             <h3 class="project-title">Personal Finance Survey Analyzer</h3>
-                            <p class="project-description">CLI application for analyzing personal finance survey data with cloud integration. Features data visualization with matplotlib/seaborn, Google Sheets integration for cloud storage, and comprehensive statistical analysis.</p>
+                            <p class="project-description">CLI application for analyzing personal finance survey data with cloud integration. Features data visualization with matplotlib/seaborn and Google Sheets integration.</p>
                             <div class="project-links">
                                 <a href="https://github.com/SteveDok22/MoneyMind---Servey" target="_blank" class="project-btn"><i data-lucide="github"></i>Source Code</a>
                             </div>
@@ -126,10 +132,11 @@
                     <!-- FinTrack Dashboard -->
                     <article class="project-card-full" data-category="frontend">
                         <div class="project-image">
+                            <img src="../assets/images/projects/fintrack.jpg" alt="FinTrack Dashboard" class="project-screenshot" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                             <div class="project-placeholder"><i data-lucide="wallet"></i></div>
                             <div class="project-overlay">
-                                <a href="https://stevedok22.github.io/personal-finance-dashboard/" target="_blank" class="project-link"><i data-lucide="external-link"></i></a>
-                                <a href="https://github.com/SteveDok22/personal-finance-dashboard" target="_blank" class="project-link"><i data-lucide="github"></i></a>
+                                <a href="https://stevedok22.github.io/FinTrack/" target="_blank" class="project-link"><i data-lucide="external-link"></i></a>
+                                <a href="https://github.com/SteveDok22/FinTrack" target="_blank" class="project-link"><i data-lucide="github"></i></a>
                             </div>
                         </div>
                         <div class="project-content">
@@ -140,10 +147,10 @@
                                 <span class="tag">CSS3</span>
                             </div>
                             <h3 class="project-title">FinTrack Dashboard</h3>
-                            <p class="project-description">Personal finance tracking dashboard with interactive data visualization. T-Bank inspired UI design with income/expense tracking, budget management, analytics page, and responsive design. Uses LocalStorage for data persistence.</p>
+                            <p class="project-description">Personal finance tracking dashboard with interactive data visualization. T-Bank inspired UI design with income/expense tracking, budget management, and analytics.</p>
                             <div class="project-links">
-                                <a href="https://stevedok22.github.io/personal-finance-dashboard/" target="_blank" class="project-btn primary"><i data-lucide="external-link"></i>Live Demo</a>
-                                <a href="https://github.com/SteveDok22/personal-finance-dashboard" target="_blank" class="project-btn"><i data-lucide="github"></i>Source Code</a>
+                                <a href="https://stevedok22.github.io/FinTrack/" target="_blank" class="project-btn primary"><i data-lucide="external-link"></i>Live Demo</a>
+                                <a href="https://github.com/SteveDok22/FinTrack" target="_blank" class="project-btn"><i data-lucide="github"></i>Source Code</a>
                             </div>
                         </div>
                     </article>
@@ -151,6 +158,7 @@
                     <!-- HYPE Specialty Coffee -->
                     <article class="project-card-full" data-category="frontend">
                         <div class="project-image">
+                            <img src="../assets/images/projects/hype-coffee.jpg" alt="HYPE Specialty Coffee" class="project-screenshot" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                             <div class="project-placeholder"><i data-lucide="coffee"></i></div>
                             <div class="project-overlay">
                                 <a href="https://stevedok22.github.io/HYPE-speciality-coffee/" target="_blank" class="project-link"><i data-lucide="external-link"></i></a>
@@ -165,7 +173,7 @@
                                 <span class="tag">Responsive</span>
                             </div>
                             <h3 class="project-title">HYPE Specialty Coffee</h3>
-                            <p class="project-description">Modern coffee shop website featuring custom SVG logo with floating steam animation, neon pulsing text effects, smooth hamburger menu transitions, and responsive design. Built with pure CSS animations.</p>
+                            <p class="project-description">Modern coffee shop website featuring custom SVG logo with floating steam animation, neon pulsing text effects, smooth hamburger menu transitions, and responsive design.</p>
                             <div class="project-links">
                                 <a href="https://stevedok22.github.io/HYPE-speciality-coffee/" target="_blank" class="project-btn primary"><i data-lucide="external-link"></i>Live Demo</a>
                                 <a href="https://github.com/SteveDok22/HYPE-speciality-coffee" target="_blank" class="project-btn"><i data-lucide="github"></i>Source Code</a>
@@ -176,6 +184,7 @@
                     <!-- Loan Calculator -->
                     <article class="project-card-full" data-category="python">
                         <div class="project-image">
+                            <img src="../assets/images/projects/loan-calculator.jpg" alt="Loan Calculator" class="project-screenshot" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                             <div class="project-placeholder"><i data-lucide="calculator"></i></div>
                             <div class="project-overlay">
                                 <a href="https://github.com/SteveDok22/loan-calculator" target="_blank" class="project-link"><i data-lucide="github"></i></a>
@@ -188,7 +197,7 @@
                                 <span class="tag">Financial Calculations</span>
                             </div>
                             <h3 class="project-title">Loan Calculator</h3>
-                            <p class="project-description">Python application for loan calculations with payment schedule generation. Features early payment simulations, amortization tables, comprehensive data export, and modular OOP architecture.</p>
+                            <p class="project-description">Python application for loan calculations with payment schedule generation. Features early payment simulations, amortization tables, and comprehensive data export.</p>
                             <div class="project-links">
                                 <a href="https://github.com/SteveDok22/loan-calculator" target="_blank" class="project-btn"><i data-lucide="github"></i>Source Code</a>
                             </div>
@@ -198,44 +207,46 @@
                     <!-- Thunder QR Generator -->
                     <article class="project-card-full" data-category="python">
                         <div class="project-image">
+                            <img src="../assets/images/projects/qr-generator.jpg" alt="Thunder QR Generator" class="project-screenshot" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                             <div class="project-placeholder"><i data-lucide="qr-code"></i></div>
                             <div class="project-overlay">
-                                <a href="https://github.com/SteveDok22/thunder-qr-generator" target="_blank" class="project-link"><i data-lucide="github"></i></a>
+                                <a href="https://github.com/SteveDok22/Thunder-QR-generator" target="_blank" class="project-link"><i data-lucide="github"></i></a>
                             </div>
                         </div>
                         <div class="project-content">
                             <div class="project-tags">
                                 <span class="tag">Python</span>
                                 <span class="tag">qrcode</span>
-                                <span class="tag">CLI</span>
+                                <span class="tag">Pillow</span>
                             </div>
                             <h3 class="project-title">Thunder QR Generator</h3>
-                            <p class="project-description">Enhanced QR code generator with expanded functionality. Command-line tool for generating customized QR codes with various sizes and error correction levels.</p>
+                            <p class="project-description">Custom QR code generator with visual enhancements. Features personalized branding, color customization, and logo embedding capabilities.</p>
                             <div class="project-links">
-                                <a href="https://github.com/SteveDok22/thunder-qr-generator" target="_blank" class="project-btn"><i data-lucide="github"></i>Source Code</a>
+                                <a href="https://github.com/SteveDok22/Thunder-QR-generator" target="_blank" class="project-btn"><i data-lucide="github"></i>Source Code</a>
                             </div>
                         </div>
                     </article>
 
-                    <!-- Hacktoberfest ResCanvas -->
+                    <!-- ResCanvas -->
                     <article class="project-card-full" data-category="frontend">
                         <div class="project-image">
-                            <div class="project-placeholder"><i data-lucide="palette"></i></div>
+                            <img src="../assets/images/projects/rescanvas.jpg" alt="ResCanvas" class="project-screenshot" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="project-placeholder"><i data-lucide="file-text"></i></div>
                             <div class="project-overlay">
-                                <a href="https://github.com/ResilientApp/ResCanvas" target="_blank" class="project-link"><i data-lucide="github"></i></a>
+                                <a href="https://github.com/SteveDok22/ResCanvas-Hacktoberfest-2024" target="_blank" class="project-link"><i data-lucide="github"></i></a>
                             </div>
                         </div>
                         <div class="project-content">
                             <div class="project-tags">
-                                <span class="tag">React</span>
-                                <span class="tag">Canvas API</span>
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">JavaScript</span>
                                 <span class="tag">Open Source</span>
-                                <span class="tag">Hacktoberfest</span>
                             </div>
-                            <h3 class="project-title">ResCanvas Contribution</h3>
-                            <p class="project-description">Open-source contribution to ResCanvas project during Hacktoberfest 2025. Implemented advanced brush system with custom effects, mixer filters, and rubber stamp tool functionality.</p>
+                            <h3 class="project-title">ResCanvas</h3>
+                            <p class="project-description">Open-source contribution to Hacktoberfest 2024. Resume builder with customizable templates and responsive design.</p>
                             <div class="project-links">
-                                <a href="https://github.com/ResilientApp/ResCanvas" target="_blank" class="project-btn"><i data-lucide="github"></i>View Project</a>
+                                <a href="https://github.com/SteveDok22/ResCanvas-Hacktoberfest-2024" target="_blank" class="project-btn"><i data-lucide="github"></i>Source Code</a>
                             </div>
                         </div>
                     </article>
@@ -243,19 +254,19 @@
             </div>
         </section>
 
-        <!-- GitHub Stats -->
-        <section class="section github-section">
+        <!-- CTA Section -->
+        <section class="section cta-section">
             <div class="container">
-                <div class="section-header">
-                    <div class="section-label"><span>GitHub Activity</span></div>
-                    <h2 class="section-title heading-lg">Open Source Contributions</h2>
-                </div>
-                
-                <div class="github-cta">
-                    <a href="https://github.com/SteveDok22" target="_blank" class="btn btn-primary">
-                        <i data-lucide="github"></i>
-                        View My GitHub Profile
-                    </a>
+                <div class="cta-card">
+                    <div class="cta-glow"></div>
+                    <div class="cta-content">
+                        <h2 class="heading-lg">Have a Project in Mind?</h2>
+                        <p class="text-lg">Let's discuss how I can help bring your ideas to life</p>
+                        <div class="cta-buttons">
+                            <a href="contact.html" class="btn btn-primary"><i data-lucide="mail"></i>Get In Touch</a>
+                            <a href="https://github.com/SteveDok22" target="_blank" class="btn btn-secondary"><i data-lucide="github"></i>View GitHub</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -268,46 +279,41 @@
                     <div class="footer-logo-icon">SN</div>
                     <div>
                         <div class="footer-name">Stiven Ntoktorov</div>
-                        <div class="footer-text">Full-Stack Developer & MLOps Engineer</div>
+                        <div class="footer-text">Junior Full-Stack Developer</div>
                     </div>
                 </div>
                 <div class="footer-socials">
                     <a href="https://github.com/SteveDok22" target="_blank" class="social-link"><i data-lucide="github"></i></a>
                     <a href="https://www.linkedin.com/in/steven-doktorov-304aa5296" target="_blank" class="social-link"><i data-lucide="linkedin"></i></a>
-                    <a href="/cdn-cgi/l/email-protection#4a39642e25213e2538253c7b78790a2d272b232664292527" class="social-link"><i data-lucide="mail"></i></a>
+                    <a href="mailto:s.doktorov123@gmail.com" class="social-link"><i data-lucide="mail"></i></a>
                 </div>
             </div>
-            <div class="footer-bottom"><p class="footer-text">© 2025 Stiven Ntoktorov. All rights reserved.</p></div>
+            <div class="footer-bottom">
+                <p class="footer-text">© 2025 Stiven Ntoktorov. All rights reserved. | Zürich, Switzerland</p>
+            </div>
         </div>
     </footer>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    <script>
         lucide.createIcons();
         function toggleMenu() { document.getElementById('navMenu').classList.toggle('active'); }
         
-        // Project Filter
-        const filterBtns = document.querySelectorAll('.filter-btn');
-        const projects = document.querySelectorAll('.project-card-full');
-        
-        filterBtns.forEach(btn => {
+        // Project filtering
+        document.querySelectorAll('.filter-btn').forEach(btn => {
             btn.addEventListener('click', () => {
-                filterBtns.forEach(b => b.classList.remove('active'));
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
-                
                 const filter = btn.dataset.filter;
-                
-                projects.forEach(project => {
-                    if (filter === 'all' || project.dataset.category.includes(filter)) {
-                        project.style.display = 'block';
-                        project.style.animation = 'fadeInUp 0.5s ease forwards';
+                document.querySelectorAll('.project-card-full').forEach(card => {
+                    if (filter === 'all' || card.dataset.category.includes(filter)) {
+                        card.style.display = 'block';
+                        card.style.animation = 'fadeInUp 0.5s ease-out forwards';
                     } else {
-                        project.style.display = 'none';
+                        card.style.display = 'none';
                     }
                 });
             });
         });
     </script>
-
-    <style>
-        .github-section {
-            background: 
+</body>
+</html>

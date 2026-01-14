@@ -1,5 +1,75 @@
 /* ===== PAGES SHARED STYLES ===== */
 
+/* Network Background for inner pages */
+.bg-network {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/images/bg-network.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.15;
+  pointer-events: none;
+  z-index: -2;
+}
+
+/* Video Background */
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  overflow: hidden;
+}
+
+.video-background video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, 
+    rgba(10, 16, 20, 0.85) 0%, 
+    rgba(10, 16, 20, 0.75) 50%,
+    rgba(10, 16, 20, 0.9) 100%
+  );
+}
+
+/* Project Screenshots */
+.project-screenshot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.project-card-full:hover .project-screenshot {
+  transform: scale(1.05);
+}
+
+.project-screenshot + .project-placeholder {
+  display: none;
+}
+
 /* Page Hero */
 .page-hero {
   padding: calc(var(--nav-height) + 80px) 0 80px;
