@@ -52,6 +52,13 @@
 }
 
 /* Project Screenshots */
+.project-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px 16px 0 0;
+  background: var(--bg-secondary);
+}
+
 .project-screenshot {
   position: absolute;
   top: 0;
