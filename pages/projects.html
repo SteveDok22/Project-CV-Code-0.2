@@ -58,12 +58,53 @@
                 <div class="projects-filter">
                     <button class="filter-btn active" data-filter="all">All Projects</button>
                     <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+                    <button class="filter-btn" data-filter="ml">ML / Data</button>
                     <button class="filter-btn" data-filter="python">Python</button>
                     <button class="filter-btn" data-filter="frontend">Frontend</button>
                     <button class="filter-btn" data-filter="trading">Trading</button>
                 </div>
 
                 <div class="projects-full-grid">
+
+                    <!-- Credit Card Fraud Detection — PP5 (ML flagship) -->
+                    <article class="project-card-full" data-category="python fullstack ml">
+                        <div class="project-image">
+                            <img src="../assets/images/projects/MockupCreditCard.gif"
+                                alt="Credit Card Fraud Detection" class="project-screenshot"
+                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="project-placeholder"><i data-lucide="shield-alert"></i></div>
+                            <div class="project-overlay">
+                                <a href="https://credit-card-fraud-detection-st-4cbb00a4456a.herokuapp.com/"
+                                    target="_blank" class="project-link"><i data-lucide="external-link"></i></a>
+                                <a href="https://github.com/SteveDok22/credit-card-fraud-detection" target="_blank"
+                                    class="project-link"><i data-lucide="github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">XGBoost</span>
+                                <span class="tag">SHAP</span>
+                                <span class="tag">Streamlit</span>
+                                <span class="tag">Heroku</span>
+                            </div>
+                            <h3 class="project-title">Credit Card Fraud Detection</h3>
+                            <p class="project-description">
+                                End-to-end ML system for detecting fraudulent transactions using XGBoost classification
+                                and Autoencoder-based anomaly detection. Includes full CRISP-DM pipeline across 7
+                                Jupyter notebooks, SHAP explainability, and an interactive 7-page Streamlit dashboard —
+                                enabling real-time fraud scoring and model transparency for financial stakeholders.
+                            </p>
+                            <div class="project-links">
+                                <a href="https://credit-card-fraud-detection-st-4cbb00a4456a.herokuapp.com/"
+                                    target="_blank" class="project-btn primary"><i
+                                        data-lucide="external-link"></i>Live Demo</a>
+                                <a href="https://github.com/SteveDok22/credit-card-fraud-detection" target="_blank"
+                                    class="project-btn"><i data-lucide="github"></i>Source Code</a>
+                            </div>
+                        </div>
+                    </article>
+
                     <!-- TradeSim Pro -->
                     <article class="project-card-full" data-category="fullstack">
                         <div class="project-image">
@@ -93,82 +134,6 @@
                                 <a href="https://tradesim-pro-stiven-62203fadbb77.herokuapp.com" target="_blank"
                                     class="project-btn primary"><i data-lucide="external-link"></i>Live Demo</a>
                                 <a href="https://github.com/SteveDok22/TradeSim-Pro" target="_blank"
-                                    class="project-btn"><i data-lucide="github"></i>Source Code</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Credit Card Fraud Detection — PP5 (ML flagship) -->
-                    <article class="project-card-full" data-category="python fullstack">
-                        <div class="project-image">
-                            <img src="assets\images\projects\MockupCreditCard.gif" alt="Credit Card Fraud Detection"
-                                class="project-screenshot"
-                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                            <div class="project-placeholder"><i data-lucide="shield-alert"></i></div>
-                            <div class="project-overlay">
-                                <a href="https://credit-card-fraud-detection-st-4cbb00a4456a.herokuapp.com/"
-                                    target="_blank" class="project-link"><i data-lucide="external-link"></i></a>
-                                <a href="https://github.com/SteveDok22/credit-card-fraud-detection" target="_blank"
-                                    class="project-link"><i data-lucide="github"></i></a>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <div class="project-tags">
-                                <span class="tag">Python</span>
-                                <span class="tag">XGBoost</span>
-                                <span class="tag">SHAP</span>
-                                <span class="tag">Streamlit</span>
-                                <span class="tag">Heroku</span>
-                            </div>
-                            <h3 class="project-title">Credit Card Fraud Detection</h3>
-                            <p class="project-description">
-                                End-to-end ML system for detecting fraudulent transactions using XGBoost classification
-                                and
-                                Autoencoder-based anomaly detection. Includes full CRISP-DM pipeline across 7 Jupyter
-                                notebooks,
-                                SHAP explainability, and an interactive 7-page Streamlit dashboard — enabling real-time
-                                fraud
-                                scoring and model transparency for financial stakeholders.
-                            </p>
-                            <div class="project-links">
-                                <a href="https://credit-card-fraud-detection-st-4cbb00a4456a.herokuapp.com/"
-                                    target="_blank" class="project-btn primary"><i data-lucide="external-link"></i>Live
-                                    Demo</a>
-                                <a href="https://github.com/SteveDok22/credit-card-fraud-detection" target="_blank"
-                                    class="project-btn"><i data-lucide="github"></i>Source Code</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- HYPE Specialty Coffee -->
-                    <article class="project-card-full" data-category="frontend">
-                        <div class="project-image">
-                            <img src="assets\images\projects\MOCUPHYPE-gif.gif" alt="HYPE Specialty Coffee"
-                                class="project-screenshot"
-                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                            <div class="project-placeholder"><i data-lucide="coffee"></i></div>
-                            <div class="project-overlay">
-                                <a href="https://stevedok22.github.io/HYPE-speciality-coffee/" target="_blank"
-                                    class="project-link"><i data-lucide="external-link"></i></a>
-                                <a href="https://github.com/SteveDok22/HYPE-speciality-coffee" target="_blank"
-                                    class="project-link"><i data-lucide="github"></i></a>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <div class="project-tags">
-                                <span class="tag">HTML5</span>
-                                <span class="tag">CSS3</span>
-                                <span class="tag">SVG Animations</span>
-                                <span class="tag">Responsive</span>
-                            </div>
-                            <h3 class="project-title">HYPE Specialty Coffee</h3>
-                            <p class="project-description">Modern coffee shop website featuring custom SVG logo with
-                                floating steam animation, neon pulsing text effects, smooth hamburger menu transitions,
-                                and responsive design.</p>
-                            <div class="project-links">
-                                <a href="https://stevedok22.github.io/Hype-coffee/" target="_blank"
-                                    class="project-btn primary"><i data-lucide="external-link"></i>Live Demo</a>
-                                <a href="https://github.com/SteveDok22/HYPE-speciality-coffee" target="_blank"
                                     class="project-btn"><i data-lucide="github"></i>Source Code</a>
                             </div>
                         </div>
@@ -207,15 +172,15 @@
                     <!-- FinTrack Dashboard -->
                     <article class="project-card-full" data-category="frontend">
                         <div class="project-image">
-                            <img src="assets\images\projects\Fin-Tracker-gif.gif" alt="FinTrack Dashboard"
+                            <img src="../assets/images/projects/Fin-Tracker-gif.gif" alt="FinTrack Dashboard"
                                 class="project-screenshot"
                                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                             <div class="project-placeholder"><i data-lucide="wallet"></i></div>
                             <div class="project-overlay">
-                                <a href="https://stevedok22.github.io/FinTrack/" target="_blank" class="project-link"><i
-                                        data-lucide="external-link"></i></a>
-                                <a href="https://github.com/SteveDok22/FinTrack" target="_blank" class="project-link"><i
-                                        data-lucide="github"></i></a>
+                                <a href="https://stevedok22.github.io/FinTrack/" target="_blank"
+                                    class="project-link"><i data-lucide="external-link"></i></a>
+                                <a href="https://github.com/SteveDok22/FinTrack" target="_blank"
+                                    class="project-link"><i data-lucide="github"></i></a>
                             </div>
                         </div>
                         <div class="project-content">
@@ -232,8 +197,42 @@
                             <div class="project-links">
                                 <a href="https://stevedok22.github.io/FinTrack/" target="_blank"
                                     class="project-btn primary"><i data-lucide="external-link"></i>Live Demo</a>
-                                <a href="https://github.com/SteveDok22/FinTrack" target="_blank" class="project-btn"><i
-                                        data-lucide="github"></i>Source Code</a>
+                                <a href="https://github.com/SteveDok22/FinTrack" target="_blank"
+                                    class="project-btn"><i data-lucide="github"></i>Source Code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- HYPE Specialty Coffee -->
+                    <article class="project-card-full" data-category="frontend">
+                        <div class="project-image">
+                            <img src="../assets/images/projects/MOCUPHYPE-gif.gif" alt="HYPE Specialty Coffee"
+                                class="project-screenshot"
+                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="project-placeholder"><i data-lucide="coffee"></i></div>
+                            <div class="project-overlay">
+                                <a href="https://stevedok22.github.io/HYPE-speciality-coffee/" target="_blank"
+                                    class="project-link"><i data-lucide="external-link"></i></a>
+                                <a href="https://github.com/SteveDok22/HYPE-speciality-coffee" target="_blank"
+                                    class="project-link"><i data-lucide="github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">SVG Animations</span>
+                                <span class="tag">Responsive</span>
+                            </div>
+                            <h3 class="project-title">HYPE Specialty Coffee</h3>
+                            <p class="project-description">Modern coffee shop website featuring custom SVG logo with
+                                floating steam animation, neon pulsing text effects, smooth hamburger menu transitions,
+                                and responsive design.</p>
+                            <div class="project-links">
+                                <a href="https://stevedok22.github.io/HYPE-speciality-coffee/" target="_blank"
+                                    class="project-btn primary"><i data-lucide="external-link"></i>Live Demo</a>
+                                <a href="https://github.com/SteveDok22/HYPE-speciality-coffee" target="_blank"
+                                    class="project-btn"><i data-lucide="github"></i>Source Code</a>
                             </div>
                         </div>
                     </article>
@@ -273,7 +272,7 @@
                     <!-- Thunder QR Generator -->
                     <article class="project-card-full" data-category="python">
                         <div class="project-image">
-                            <img src="../assets/images/projects/Recording.gif" alt="TradeSim Pro"
+                            <img src="../assets/images/projects/Recording.gif" alt="Thunder QR Generator"
                                 class="project-screenshot"
                                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                             <div class="project-placeholder"><i data-lucide="qr-code"></i></div>
@@ -299,6 +298,7 @@
                             </div>
                         </div>
                     </article>
+
                 </div>
             </div>
         </section>
@@ -329,7 +329,7 @@
                     <div class="footer-logo-icon">SN</div>
                     <div>
                         <div class="footer-name">Stiven Ntoktorov</div>
-                        <div class="footer-text">Junior Full-Stack Developer</div>
+                        <div class="footer-text">FinTech Full-Stack Developer</div>
                     </div>
                 </div>
                 <div class="footer-socials">
