@@ -13,7 +13,7 @@
 
 A responsive, dark-theme personal portfolio built with vanilla HTML, CSS, and JavaScript. Designed to present a FinTech-focused development profile with clean navigation, animated sections, and direct access to CV and project work.
 
-The site covers six pages: Home, About, Skills, Projects, Experience, and Contact.
+The site covers six pages: Home, About, Skills, Projects, Experience, & Contact.
 
 ---
 
