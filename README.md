@@ -135,7 +135,7 @@ Tested and confirmed on Chrome 90+, Firefox 88+, Safari 14+, Edge 90+, and iOS S
 - Design and development: Stiven Ntoktorov
 - Icons: [Lucide](https://lucide.dev) and [Devicon](https://devicon.dev)
 - Fonts: [Google Fonts](https://fonts.google.com)
-- Training: [Code Institute](https://codeinstitute.net) — Full-Stack Software Development Diploma, AI Cores Specialization
+- Training: [Code Institute](https://codeinstitute.net) — Full-Stack Software Development Diploma, AI Cores Specialization!
 
 ---
 
