@@ -79,7 +79,7 @@ Project-CV-Code-0.2/
     ├── videos/
     │   └── bb2.mp4
     └── cv/
-        └── STIVEN-CV-FinTech-2026.pdf
+        └── STIVEN-CV-2026-EN.pdf
 ```
 
 ---
