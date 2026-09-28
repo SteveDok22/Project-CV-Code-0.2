@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathons | Stiven Ntoktorov</title>
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%2300e5cc' rx='20' width='100' height='100'/><text x='50' y='68' font-size='50' text-anchor='middle' fill='%230a1014' font-weight='bold'>SN</text></svg>">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <!-- Video Background -->
+    <div class="video-background">
+        <video autoplay muted loop playsinline id="bg-video">
+            <source src="../assets/videos/bb2.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <div class="nav-logo-icon">SN</div>
+                <span class="nav-logo-text">Stiven.dev</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="hackathons.html" class="nav-link active">Hackathons</a></li>
+                <li><a href="experience.html" class="nav-link">Experience</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <a href="contact.html" class="nav-cta"><i data-lucide="message-circle"></i>Let's Talk</a>
+            <div class="nav-toggle" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <main class="main">
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero-content">
+                    <div class="section-label"><i data-lucide="trophy"></i><span>Competitions</span></div>
+                    <h1 class="heading-xl">Hackathons &amp; <span class="text-gradient">Certificates</span></h1>
+                    <p class="text-lg">Solutions built under time pressure for real industry challenges, with the
+                        certificates and moments from each event</p>
+                </div>
+            </div>
+        </section>
+
+        <!--
+            HOW TO ADD A HACKATHON
+            1. Put files in assets/images/hackathons/<event-folder>/
+               - certificate.jpg (or .png) is the certificate shown on the card
+               - certificate.pdf (optional) is linked from the "View PDF" button
+               - photo-1.jpg, photo-2.jpg, ... are the event photos
+            2. Copy one <article class="hackathon-card"> block below and edit the text and paths.
+            Missing photos are hidden automatically, so you can list more than you have.
+        -->
+        <section class="section hackathons-section">
+            <div class="container">
+                <div class="hackathons-list">
+
+                    <!-- SwissHacks 2026 -->
+                    <article class="hackathon-card">
+                        <header class="hackathon-header">
+                            <div>
+                                <div class="hackathon-event">SwissHacks 2026</div>
+                                <div class="hackathon-meta">
+                                    <span><i data-lucide="calendar"></i>2026</span>
+                                    <span><i data-lucide="flag"></i>AMINA Challenge 4</span>
+                                </div>
+                            </div>
+                            <!-- Edit to your result, e.g. "1st Place" or "Finalist" -->
+                            <span class="hackathon-badge"><i data-lucide="award"></i>Participant</span>
+                        </header>
+
+                        <div class="hackathon-body">
+                            <div class="hackathon-info">
+                                <h3 class="hackathon-project">Sentinel · Drift Engine</h3>
+                                <p class="hackathon-description">
+                                    AI-powered KYC drift detection platform for FINMA-regulated banks. A 7-layer
+                                    pipeline combines Bayesian changepoint detection, drift velocity, ownership-graph
+                                    contagion analysis, and a cost-aware rules→ML→LLM cascade to flag compliance risk
+                                    months before a sanctions event, with full explainability and an immutable audit
+                                    trail.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="tag">Python</span>
+                                    <span class="tag">FastAPI</span>
+                                    <span class="tag">Next.js 15</span>
+                                    <span class="tag">XGBoost</span>
+                                    <span class="tag">Claude AI</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/SteveDok22/Swisshacks-KYC-Drift-Engine-26"
+                                        target="_blank" class="project-btn"><i data-lucide="github"></i>Source Code</a>
+                                    <a href="../assets/images/hackathons/swisshacks-2026/certificate.pdf"
+                                        target="_blank" class="project-btn cert-pdf-link"><i
+                                            data-lucide="file-text"></i>View PDF</a>
+                                </div>
+                            </div>
+
+                            <figure class="hackathon-certificate">
+                                <img src="../assets/images/hackathons/swisshacks-2026/certificate.jpg"
+                                    alt="SwissHacks 2026 certificate" class="lightbox-trigger">
+                                <div class="certificate-placeholder">
+                                    <i data-lucide="file-badge"></i><span>Certificate coming soon</span>
+                                </div>
+                                <figcaption>Certificate</figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="hackathon-gallery">
+                            <img src="../assets/images/hackathons/swisshacks-2026/photo-1.jpg"
+                                alt="SwissHacks 2026 photo 1" class="lightbox-trigger" loading="lazy">
+                            <img src="../assets/images/hackathons/swisshacks-2026/photo-2.jpg"
+                                alt="SwissHacks 2026 photo 2" class="lightbox-trigger" loading="lazy">
+                            <img src="../assets/images/hackathons/swisshacks-2026/photo-3.jpg"
+                                alt="SwissHacks 2026 photo 3" class="lightbox-trigger" loading="lazy">
+                            <img src="../assets/images/hackathons/swisshacks-2026/photo-4.jpg"
+                                alt="SwissHacks 2026 photo 4" class="lightbox-trigger" loading="lazy">
+                        </div>
+                    </article>
+
+                    <!-- JiVS Hackathon 2026 -->
+                    <article class="hackathon-card">
+                        <header class="hackathon-header">
+                            <div>
+                                <div class="hackathon-event">JiVS Hackathon 2026</div>
+                                <div class="hackathon-meta">
+                                    <span><i data-lucide="calendar"></i>2026</span>
+                                    <span><i data-lucide="flag"></i>Trusted Enterprise AI</span>
+                                </div>
+                            </div>
+                            <!-- Edit to your result, e.g. "1st Place" or "Finalist" -->
+                            <span class="hackathon-badge"><i data-lucide="award"></i>Participant</span>
+                        </header>
+
+                        <div class="hackathon-body">
+                            <div class="hackathon-info">
+                                <h3 class="hackathon-project">AEGIS — Trusted Enterprise AI</h3>
+                                <p class="hackathon-description">
+                                    Secured AI agent that answers natural-language questions over an archived SAP-like
+                                    enterprise data vault. Five layers of defense (prompt-injection filtering, PII
+                                    pseudonymization, a policy-bound SQL barrier, output scanning, and cited answers)
+                                    make it safe to run on real, sensitive data.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="tag">FastAPI</span>
+                                    <span class="tag">Angular 20</span>
+                                    <span class="tag">Claude AI</span>
+                                    <span class="tag">Presidio</span>
+                                    <span class="tag">DuckDB</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://jivs-hackathon-2026.vercel.app/" target="_blank"
+                                        class="project-btn primary"><i data-lucide="external-link"></i>Live Demo</a>
+                                    <a href="https://github.com/SteveDok22/JiVS-Trusted-Enterprise-AI-26"
+                                        target="_blank" class="project-btn"><i data-lucide="github"></i>Source Code</a>
+                                    <a href="../assets/images/hackathons/jivs-2026/certificate.pdf" target="_blank"
+                                        class="project-btn cert-pdf-link"><i data-lucide="file-text"></i>View PDF</a>
+                                </div>
+                            </div>
+
+                            <figure class="hackathon-certificate">
+                                <img src="../assets/images/hackathons/jivs-2026/certificate.jpg"
+                                    alt="JiVS Hackathon 2026 certificate" class="lightbox-trigger">
+                                <div class="certificate-placeholder">
+                                    <i data-lucide="file-badge"></i><span>Certificate coming soon</span>
+                                </div>
+                                <figcaption>Certificate</figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="hackathon-gallery">
+                            <img src="../assets/images/hackathons/jivs-2026/photo-1.jpg"
+                                alt="JiVS Hackathon 2026 photo 1" class="lightbox-trigger" loading="lazy">
+                            <img src="../assets/images/hackathons/jivs-2026/photo-2.jpg"
+                                alt="JiVS Hackathon 2026 photo 2" class="lightbox-trigger" loading="lazy">
+                            <img src="../assets/images/hackathons/jivs-2026/photo-3.jpg"
+                                alt="JiVS Hackathon 2026 photo 3" class="lightbox-trigger" loading="lazy">
+                            <img src="../assets/images/hackathons/jivs-2026/photo-4.jpg"
+                                alt="JiVS Hackathon 2026 photo 4" class="lightbox-trigger" loading="lazy">
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section cta-section">
+            <div class="container">
+                <div class="cta-card">
+                    <div class="cta-glow"></div>
+                    <div class="cta-content">
+                        <h2 class="heading-lg">Building a Team for the Next Hackathon?</h2>
+                        <p class="text-lg">I'm always up for a new challenge. Let's build something together</p>
+                        <div class="cta-buttons">
+                            <a href="contact.html" class="btn btn-primary"><i data-lucide="mail"></i>Get In Touch</a>
+                            <a href="projects.html" class="btn btn-secondary"><i data-lucide="folder-open"></i>All
+                                Projects</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button class="lightbox-btn lightbox-close" aria-label="Close"><i data-lucide="x"></i></button>
+        <button class="lightbox-btn lightbox-prev" aria-label="Previous"><i data-lucide="chevron-left"></i></button>
+        <img class="lightbox-image" alt="">
+        <button class="lightbox-btn lightbox-next" aria-label="Next"><i data-lucide="chevron-right"></i></button>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="footer-logo-icon">SN</div>
+                    <div>
+                        <div class="footer-name">Stiven Ntoktorov</div>
+                        <div class="footer-text">FinTech Full-Stack Developer · ML & Data</div>
+                    </div>
+                </div>
+                <div class="footer-socials">
+                    <a href="https://github.com/SteveDok22" target="_blank" class="social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/stiven-ntoktorov-304aa5296/" target="_blank" class="social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                <rect x="2" y="9" width="4" height="12"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </a>
+                    <a href="mailto:s.doktorov123@gmail.com" class="social-link"><i data-lucide="mail"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-text">© 2025 Stiven Ntoktorov. All rights reserved. | Zürich, Switzerland</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        function toggleMenu() { document.getElementById('navMenu').classList.toggle('active'); }
+
+        // Hide photos that haven't been added yet, and the gallery if it ends up empty
+        document.querySelectorAll('.hackathon-gallery img').forEach(img => {
+            const drop = () => {
+                const gallery = img.parentElement;
+                img.remove();
+                if (!gallery.querySelector('img')) gallery.remove();
+            };
+            if (img.complete && img.naturalWidth === 0) drop();
+            else img.addEventListener('error', drop);
+        });
+
+        // Show the placeholder until a certificate image exists
+        document.querySelectorAll('.hackathon-certificate img').forEach(img => {
+            const markMissing = () => img.closest('.hackathon-certificate').classList.add('missing');
+            if (img.complete && img.naturalWidth === 0) markMissing();
+            else img.addEventListener('error', markMissing);
+        });
+
+        // Only show "View PDF" when the PDF is actually there
+        document.querySelectorAll('.cert-pdf-link').forEach(link => {
+            fetch(link.href, { method: 'HEAD' })
+                .then(res => { if (!res.ok) link.remove(); })
+                .catch(() => link.remove());
+        });
+
+        // Lightbox: browse the certificate and photos of one hackathon
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImage = lightbox.querySelector('.lightbox-image');
+        let group = [];
+        let index = 0;
+
+        function show(i) {
+            index = (i + group.length) % group.length;
+            lightboxImage.src = group[index].src;
+            lightboxImage.alt = group[index].alt;
+            lightbox.classList.toggle('single', group.length < 2);
+        }
+
+        function openLightbox(img) {
+            group = [...img.closest('.hackathon-card').querySelectorAll('img.lightbox-trigger')]
+                .filter(el => el.isConnected && el.naturalWidth > 0);
+            show(group.indexOf(img));
+            lightbox.classList.add('open');
+            lightbox.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            lightbox.classList.remove('open');
+            lightbox.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        }
+
+        document.querySelectorAll('img.lightbox-trigger').forEach(img => {
+            img.addEventListener('click', () => openLightbox(img));
+        });
+        lightbox.querySelector('.lightbox-close').addEventListener('click', closeLightbox);
+        lightbox.querySelector('.lightbox-prev').addEventListener('click', () => show(index - 1));
+        lightbox.querySelector('.lightbox-next').addEventListener('click', () => show(index + 1));
+        lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
+        document.addEventListener('keydown', e => {
+            if (!lightbox.classList.contains('open')) return;
+            if (e.key === 'Escape') closeLightbox();
+            if (e.key === 'ArrowLeft') show(index - 1);
+            if (e.key === 'ArrowRight') show(index + 1);
+        });
+    </script>
+</body>
+
+</html>
