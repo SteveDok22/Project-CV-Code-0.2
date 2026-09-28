@@ -1203,3 +1203,8 @@
     transform: none;
   }
 }
+
+.hackathon-badge.podium {
+  background: linear-gradient(135deg, #ffd166 0%, var(--accent-warning) 100%);
+  box-shadow: 0 4px 24px rgba(255, 170, 0, 0.3);
+}
