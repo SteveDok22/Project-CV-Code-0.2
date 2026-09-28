@@ -56,7 +56,7 @@
         <!--
             HOW TO ADD A HACKATHON
             1. Put files in assets/images/hackathons/<event-folder>/
-               - certificate.jpg (or .png) is the certificate shown on the card
+               - certificate.png (or .jpg) is the certificate shown on the card
                - certificate.pdf (optional) is linked from the "View PDF" button
                - photo-1.jpg, photo-2.jpg, ... are the event photos
             2. Copy one <article class="hackathon-card"> block below and edit the text and paths.
@@ -72,11 +72,12 @@
                             <div>
                                 <div class="hackathon-event">SwissHacks 2026</div>
                                 <div class="hackathon-meta">
-                                    <span><i data-lucide="calendar"></i>2026</span>
-                                    <span><i data-lucide="flag"></i>AMINA Challenge 4</span>
+                                    <span><i data-lucide="calendar"></i>19–21 Jun 2026</span>
+                                    <span><i data-lucide="map-pin"></i>Zürich</span>
+                                    <span><i data-lucide="building-2"></i>AMINA Bank</span>
+                                    <span><i data-lucide="flag"></i>Challenge 4 · Dynamic Risk Profiling</span>
                                 </div>
                             </div>
-                            <!-- Edit to your result, e.g. "1st Place" or "Finalist" -->
                             <span class="hackathon-badge"><i data-lucide="award"></i>Participant</span>
                         </header>
 
@@ -84,11 +85,14 @@
                             <div class="hackathon-info">
                                 <h3 class="hackathon-project">Sentinel · Drift Engine</h3>
                                 <p class="hackathon-description">
-                                    AI-powered KYC drift detection platform for FINMA-regulated banks. A 7-layer
-                                    pipeline combines Bayesian changepoint detection, drift velocity, ownership-graph
-                                    contagion analysis, and a cost-aware rules→ML→LLM cascade to flag compliance risk
-                                    months before a sanctions event, with full explainability and an immutable audit
-                                    trail.
+                                    KYC drift detection for FINMA-regulated banks: it catches customers whose risk
+                                    profile is slowly becoming invalid, before a sanctions event. A 7-layer engine
+                                    (Bayesian changepoint detection, drift velocity, ownership-graph contagion, causal
+                                    drift and suspicious-stability checks) fuses public signals with internal bank
+                                    data. In validation it flagged risk 2–7 months ahead with no false positives on
+                                    stable customers. A rules→ML→LLM cascade cut costs by 96% compared with running
+                                    an LLM on every customer. Every score is explainable, confirmed by a compliance
+                                    officer, and written to an immutable audit log.
                                 </p>
                                 <div class="project-tags">
                                     <span class="tag">Python</span>
@@ -100,14 +104,11 @@
                                 <div class="project-links">
                                     <a href="https://github.com/SteveDok22/Swisshacks-KYC-Drift-Engine-26"
                                         target="_blank" class="project-btn"><i data-lucide="github"></i>Source Code</a>
-                                    <a href="../assets/images/hackathons/swisshacks-2026/certificate.pdf"
-                                        target="_blank" class="project-btn cert-pdf-link"><i
-                                            data-lucide="file-text"></i>View PDF</a>
                                 </div>
                             </div>
 
                             <figure class="hackathon-certificate">
-                                <img src="../assets/images/hackathons/swisshacks-2026/certificate.jpg"
+                                <img src="../assets/images/hackathons/swisshacks-2026/certificate.png"
                                     alt="SwissHacks 2026 certificate" class="lightbox-trigger">
                                 <div class="certificate-placeholder">
                                     <i data-lucide="file-badge"></i><span>Certificate coming soon</span>
